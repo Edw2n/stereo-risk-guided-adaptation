@@ -1,0 +1,41 @@
+method,condition,robust_1px,robust_delta_abs,robust_D1
+RoCo-67-M02,Brightness,2.662,0.303,0.467
+RoCo-67-M02,Contrast,5.058,0.375,0.562
+RoCo-67-M02,Defocus Blur,3.008,0.34,0.421
+RoCo-67-M02,Elastic Transform,60.476,1.682,0.52
+RoCo-67-M02,Fog,5.982,0.555,0.676
+RoCo-67-M02,Frost,32.104,7.178,16.047
+RoCo-67-M02,Gaussian Blur,3.837,0.426,0.551
+RoCo-67-M02,Gaussian Noise,21.028,1.614,2.934
+RoCo-67-M02,Glass Blur,3.744,0.414,0.46
+RoCo-67-M02,Impulse Noise,27.623,2.515,4.551
+RoCo-67-M02,JPEG Compression,44.45,4.231,5.773
+RoCo-67-M02,Motion Blur,7.498,1.308,1.866
+RoCo-67-M02,Pixelate,29.42,1.394,1.633
+RoCo-67-M02,Rain,37.978,3.901,9.076
+RoCo-67-M02,Saturate,2.141,0.206,0.27
+RoCo-67-M02,Shot Noise,19.087,1.392,2.408
+RoCo-67-M02,Snow,36.421,4.886,12.001
+RoCo-67-M02,Spatter,34.001,7.566,16.353
+RoCo-67-M02,Speckle Noise,20.284,1.364,2.12
+RoCo-67-M02,Zoom Blur,62.785,7.072,11.063
+RoCo-67-M03,Brightness,2.164,0.193,0.267
+RoCo-67-M03,Contrast,5.608,0.39,0.582
+RoCo-67-M03,Defocus Blur,3.15,0.324,0.386
+RoCo-67-M03,Elastic Transform,56.878,1.586,0.528
+RoCo-67-M03,Fog,6.437,0.565,0.649
+RoCo-67-M03,Frost,32.256,6.555,15.589
+RoCo-67-M03,Gaussian Blur,3.965,0.394,0.49
+RoCo-67-M03,Gaussian Noise,20.082,1.31,2.063
+RoCo-67-M03,Glass Blur,3.67,0.39,0.412
+RoCo-67-M03,Impulse Noise,23.888,1.76,2.772
+RoCo-67-M03,JPEG Compression,39.967,3.066,4.26
+RoCo-67-M03,Motion Blur,7.63,1.065,1.708
+RoCo-67-M03,Pixelate,11.331,0.723,0.507
+RoCo-67-M03,Rain,35.004,3.403,7.645
+RoCo-67-M03,Saturate,2.265,0.199,0.296
+RoCo-67-M03,Shot Noise,18.213,1.141,1.698
+RoCo-67-M03,Snow,34.587,4.348,11.253
+RoCo-67-M03,Spatter,33.856,5.837,15.151
+RoCo-67-M03,Speckle Noise,19.113,1.181,1.636
+RoCo-67-M03,Zoom Blur,63.183,6.375,10.167

@@ -1,0 +1,24 @@
+{
+  "protocol_id": "robustspring_aligned_v2",
+  "status": "candidate_implementation_for_user_scope_review; no model evaluation launched",
+  "evaluation_label": "RobustSpring-aligned controlled corruptions applied to the public Spring training split",
+  "paper": "https://arxiv.org/html/2505.09368v2#A1.SS3.SSS3",
+  "consistency_source": "https://arxiv.org/html/2505.09368v2#S3.F2",
+  "severity_policy": "One published setting per corruption. Numeric severity 1 is a local label, not ImageNet-C severity 1. No SSIM retuning on the training subset.",
+  "exactness": "Published parameters with explicit local numerical conventions; official generator/seed/codec equivalence is not established.",
+  "proposed_core": ["clean", "gaussian_blur", "gaussian_noise", "shot_noise", "contrast", "saturate", "jpeg_compression", "pixelate"],
+  "held_out_candidate": ["brightness"],
+  "seed_policy": "sha256(2026|scene|frame|seed_key|eye), first four digest bytes little endian; NumPy default_rng PCG64; noise independent across eyes and frames",
+  "quantization": "RGB uint8 input/output; floating operations clip to [0,255] then NumPy rint (nearest-even); JPEG/PIL resize use their native uint8 outputs",
+  "conditions": {
+    "clean": {"family": "clean", "severity": 0, "seed_key": "clean", "time_consistent": true, "stereo_consistent": true},
+    "gaussian_blur": {"family": "blur", "severity": 1, "sigma_px": 4.0, "seed_key": "gaussian_blur_4", "time_consistent": true, "stereo_consistent": true, "implementation": "OpenCV GaussianBlur uint8, automatic kernel size, BORDER_REFLECT_101; byte-identical to legacy blur implementation"},
+    "gaussian_noise": {"family": "noise", "severity": 1, "sigma_unit": 0.115, "sigma_255": 29.325, "seed_key": "gaussian_noise_30", "time_consistent": false, "stereo_consistent": false, "implementation": "Independent HWC Gaussian draws per image; legacy seed key intentionally retained for paired amplitude sensitivity"},
+    "shot_noise": {"family": "noise", "severity": 1, "poisson_scale": 23.0, "seed_key": "rs_v2_shot_noise", "time_consistent": false, "stereo_consistent": false, "implementation": "Poisson((RGB/255)*23)/23 independently per HWC element and image"},
+    "brightness": {"family": "color", "severity": 1, "offset_unit": 0.39, "seed_key": "rs_v2_brightness", "time_consistent": true, "stereo_consistent": true, "implementation": "Add 0.39 to normalized RGB, literal paper Eq.4 interpretation", "unresolved": "ImageNet-C ancestor instead adds to HSV V; RobustSpring does not explicitly identify this color-space implementation choice. Excluded from proposed core."},
+    "contrast": {"family": "color", "severity": 1, "multiplier": 0.16, "center": "per-image per-channel spatial mean", "seed_key": "rs_v2_contrast", "time_consistent": true, "stereo_consistent": true, "implementation": "(RGB-mean_HW(RGB))*0.16+mean_HW(RGB); mean axes follow the cited ImageNet-C ancestor, not a confirmed RobustSpring generator"},
+    "saturate": {"family": "color", "severity": 1, "alpha": 2.3, "beta": 0.01, "seed_key": "rs_v2_saturate", "time_consistent": true, "stereo_consistent": true, "implementation": "OpenCV float32 RGB->HSV; S=clip(2.3*S+0.01,0,1); HSV->RGB"},
+    "jpeg_compression": {"family": "compression", "severity": 1, "quality": 6, "subsampling": 2, "optimize": false, "progressive": false, "seed_key": "rs_v2_jpeg", "time_consistent": true, "stereo_consistent": true, "implementation": "Pillow JPEG encode/decode, explicit 4:2:0; codec version must be recorded; paper specifies quality only"},
+    "pixelate": {"family": "quality_spatial_sampling", "severity": 1, "size_fraction": 0.16, "downsample_filter": "Pillow BOX", "upsample_filter": "Pillow BOX", "size_rounding": "floor separately for width and height", "seed_key": "rs_v2_pixelate", "time_consistent": true, "stereo_consistent": true, "implementation": "BOX down/up from cited ancestor, adapted to non-square native size; no coordinate warp or GT modification"}
+  }
+}

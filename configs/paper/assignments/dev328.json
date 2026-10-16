@@ -1,0 +1,2621 @@
+{
+  "purpose": "Generic joint main development: one sensing-related corruption per pair; predetermined before evaluation; no Fixed-best",
+  "assignment_seed": 20260927,
+  "parent_manifest_sha256": "245b55144b50365e9a8de4acc4c1af5200bd301f1db2c55a82be8a1deaa91d6b",
+  "uses_GT": false,
+  "records": [
+    {
+      "pair_id": "0002/0006",
+      "scene": "0002",
+      "frame": "0006",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0002/0016",
+      "scene": "0002",
+      "frame": "0016",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0002/0026",
+      "scene": "0002",
+      "frame": "0026",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0002/0036",
+      "scene": "0002",
+      "frame": "0036",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0002/0046",
+      "scene": "0002",
+      "frame": "0046",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0002/0056",
+      "scene": "0002",
+      "frame": "0056",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0002/0066",
+      "scene": "0002",
+      "frame": "0066",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0002/0076",
+      "scene": "0002",
+      "frame": "0076",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0002/0086",
+      "scene": "0002",
+      "frame": "0086",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0002/0096",
+      "scene": "0002",
+      "frame": "0096",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0002/0106",
+      "scene": "0002",
+      "frame": "0106",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0002/0116",
+      "scene": "0002",
+      "frame": "0116",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0002/0126",
+      "scene": "0002",
+      "frame": "0126",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0004/0005",
+      "scene": "0004",
+      "frame": "0005",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0004/0015",
+      "scene": "0004",
+      "frame": "0015",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0004/0025",
+      "scene": "0004",
+      "frame": "0025",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0004/0035",
+      "scene": "0004",
+      "frame": "0035",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0004/0045",
+      "scene": "0004",
+      "frame": "0045",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0004/0054",
+      "scene": "0004",
+      "frame": "0054",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0004/0064",
+      "scene": "0004",
+      "frame": "0064",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0004/0074",
+      "scene": "0004",
+      "frame": "0074",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0004/0084",
+      "scene": "0004",
+      "frame": "0084",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0004/0094",
+      "scene": "0004",
+      "frame": "0094",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0006/0006",
+      "scene": "0006",
+      "frame": "0006",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0006/0016",
+      "scene": "0006",
+      "frame": "0016",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0006/0026",
+      "scene": "0006",
+      "frame": "0026",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0006/0036",
+      "scene": "0006",
+      "frame": "0036",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0006/0046",
+      "scene": "0006",
+      "frame": "0046",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0006/0056",
+      "scene": "0006",
+      "frame": "0056",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0006/0066",
+      "scene": "0006",
+      "frame": "0066",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0006/0076",
+      "scene": "0006",
+      "frame": "0076",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0006/0086",
+      "scene": "0006",
+      "frame": "0086",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0006/0096",
+      "scene": "0006",
+      "frame": "0096",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0006/0106",
+      "scene": "0006",
+      "frame": "0106",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0006/0116",
+      "scene": "0006",
+      "frame": "0116",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0006/0126",
+      "scene": "0006",
+      "frame": "0126",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0006/0136",
+      "scene": "0006",
+      "frame": "0136",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0006/0146",
+      "scene": "0006",
+      "frame": "0146",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0006/0156",
+      "scene": "0006",
+      "frame": "0156",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0006/0166",
+      "scene": "0006",
+      "frame": "0166",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0006/0176",
+      "scene": "0006",
+      "frame": "0176",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0006/0186",
+      "scene": "0006",
+      "frame": "0186",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0007/0005",
+      "scene": "0007",
+      "frame": "0005",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0007/0015",
+      "scene": "0007",
+      "frame": "0015",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0007/0025",
+      "scene": "0007",
+      "frame": "0025",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0007/0035",
+      "scene": "0007",
+      "frame": "0035",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0007/0045",
+      "scene": "0007",
+      "frame": "0045",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0007/0055",
+      "scene": "0007",
+      "frame": "0055",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0007/0065",
+      "scene": "0007",
+      "frame": "0065",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0007/0075",
+      "scene": "0007",
+      "frame": "0075",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0007/0084",
+      "scene": "0007",
+      "frame": "0084",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0007/0094",
+      "scene": "0007",
+      "frame": "0094",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0007/0104",
+      "scene": "0007",
+      "frame": "0104",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0007/0114",
+      "scene": "0007",
+      "frame": "0114",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0007/0124",
+      "scene": "0007",
+      "frame": "0124",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0007/0134",
+      "scene": "0007",
+      "frame": "0134",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0007/0144",
+      "scene": "0007",
+      "frame": "0144",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0008/0005",
+      "scene": "0008",
+      "frame": "0005",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0008/0015",
+      "scene": "0008",
+      "frame": "0015",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0008/0025",
+      "scene": "0008",
+      "frame": "0025",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0008/0035",
+      "scene": "0008",
+      "frame": "0035",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0008/0045",
+      "scene": "0008",
+      "frame": "0045",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0008/0055",
+      "scene": "0008",
+      "frame": "0055",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0008/0064",
+      "scene": "0008",
+      "frame": "0064",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0008/0074",
+      "scene": "0008",
+      "frame": "0074",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0008/0084",
+      "scene": "0008",
+      "frame": "0084",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0008/0094",
+      "scene": "0008",
+      "frame": "0094",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0008/0104",
+      "scene": "0008",
+      "frame": "0104",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0008/0114",
+      "scene": "0008",
+      "frame": "0114",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0008/0123",
+      "scene": "0008",
+      "frame": "0123",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0008/0133",
+      "scene": "0008",
+      "frame": "0133",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0008/0143",
+      "scene": "0008",
+      "frame": "0143",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0008/0153",
+      "scene": "0008",
+      "frame": "0153",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0008/0163",
+      "scene": "0008",
+      "frame": "0163",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0008/0173",
+      "scene": "0008",
+      "frame": "0173",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0009/0006",
+      "scene": "0009",
+      "frame": "0006",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0009/0016",
+      "scene": "0009",
+      "frame": "0016",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0009/0026",
+      "scene": "0009",
+      "frame": "0026",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0009/0036",
+      "scene": "0009",
+      "frame": "0036",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0009/0046",
+      "scene": "0009",
+      "frame": "0046",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0009/0056",
+      "scene": "0009",
+      "frame": "0056",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0009/0067",
+      "scene": "0009",
+      "frame": "0067",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0009/0077",
+      "scene": "0009",
+      "frame": "0077",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0009/0087",
+      "scene": "0009",
+      "frame": "0087",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0009/0097",
+      "scene": "0009",
+      "frame": "0097",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0009/0107",
+      "scene": "0009",
+      "frame": "0107",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0009/0117",
+      "scene": "0009",
+      "frame": "0117",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0012/0005",
+      "scene": "0012",
+      "frame": "0005",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0012/0015",
+      "scene": "0012",
+      "frame": "0015",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0012/0025",
+      "scene": "0012",
+      "frame": "0025",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0012/0035",
+      "scene": "0012",
+      "frame": "0035",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0012/0045",
+      "scene": "0012",
+      "frame": "0045",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0012/0055",
+      "scene": "0012",
+      "frame": "0055",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0012/0065",
+      "scene": "0012",
+      "frame": "0065",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0012/0074",
+      "scene": "0012",
+      "frame": "0074",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0012/0084",
+      "scene": "0012",
+      "frame": "0084",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0012/0094",
+      "scene": "0012",
+      "frame": "0094",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0012/0104",
+      "scene": "0012",
+      "frame": "0104",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0012/0114",
+      "scene": "0012",
+      "frame": "0114",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0012/0124",
+      "scene": "0012",
+      "frame": "0124",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0012/0134",
+      "scene": "0012",
+      "frame": "0134",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0012/0143",
+      "scene": "0012",
+      "frame": "0143",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0012/0153",
+      "scene": "0012",
+      "frame": "0153",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0012/0163",
+      "scene": "0012",
+      "frame": "0163",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0012/0173",
+      "scene": "0012",
+      "frame": "0173",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0012/0183",
+      "scene": "0012",
+      "frame": "0183",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0012/0193",
+      "scene": "0012",
+      "frame": "0193",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0012/0202",
+      "scene": "0012",
+      "frame": "0202",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0012/0212",
+      "scene": "0012",
+      "frame": "0212",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0012/0222",
+      "scene": "0012",
+      "frame": "0222",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0012/0232",
+      "scene": "0012",
+      "frame": "0232",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0012/0242",
+      "scene": "0012",
+      "frame": "0242",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0012/0252",
+      "scene": "0012",
+      "frame": "0252",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0012/0262",
+      "scene": "0012",
+      "frame": "0262",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0013/0006",
+      "scene": "0013",
+      "frame": "0006",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0013/0016",
+      "scene": "0013",
+      "frame": "0016",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0013/0027",
+      "scene": "0013",
+      "frame": "0027",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0013/0037",
+      "scene": "0013",
+      "frame": "0037",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0013/0048",
+      "scene": "0013",
+      "frame": "0048",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0013/0058",
+      "scene": "0013",
+      "frame": "0058",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0013/0069",
+      "scene": "0013",
+      "frame": "0069",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0013/0079",
+      "scene": "0013",
+      "frame": "0079",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0015/0006",
+      "scene": "0015",
+      "frame": "0006",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0015/0016",
+      "scene": "0015",
+      "frame": "0016",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0015/0026",
+      "scene": "0015",
+      "frame": "0026",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0015/0036",
+      "scene": "0015",
+      "frame": "0036",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0015/0046",
+      "scene": "0015",
+      "frame": "0046",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0015/0056",
+      "scene": "0015",
+      "frame": "0056",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0015/0066",
+      "scene": "0015",
+      "frame": "0066",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0015/0076",
+      "scene": "0015",
+      "frame": "0076",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0015/0086",
+      "scene": "0015",
+      "frame": "0086",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0015/0097",
+      "scene": "0015",
+      "frame": "0097",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0015/0107",
+      "scene": "0015",
+      "frame": "0107",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0015/0117",
+      "scene": "0015",
+      "frame": "0117",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0015/0127",
+      "scene": "0015",
+      "frame": "0127",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0015/0137",
+      "scene": "0015",
+      "frame": "0137",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0015/0147",
+      "scene": "0015",
+      "frame": "0147",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0015/0157",
+      "scene": "0015",
+      "frame": "0157",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0015/0167",
+      "scene": "0015",
+      "frame": "0167",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0015/0178",
+      "scene": "0015",
+      "frame": "0178",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0015/0188",
+      "scene": "0015",
+      "frame": "0188",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0015/0198",
+      "scene": "0015",
+      "frame": "0198",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0015/0208",
+      "scene": "0015",
+      "frame": "0208",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0015/0218",
+      "scene": "0015",
+      "frame": "0218",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0015/0228",
+      "scene": "0015",
+      "frame": "0228",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0015/0238",
+      "scene": "0015",
+      "frame": "0238",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0015/0248",
+      "scene": "0015",
+      "frame": "0248",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0015/0258",
+      "scene": "0015",
+      "frame": "0258",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0018/0006",
+      "scene": "0018",
+      "frame": "0006",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0018/0016",
+      "scene": "0018",
+      "frame": "0016",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0018/0026",
+      "scene": "0018",
+      "frame": "0026",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0018/0036",
+      "scene": "0018",
+      "frame": "0036",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0018/0046",
+      "scene": "0018",
+      "frame": "0046",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0018/0056",
+      "scene": "0018",
+      "frame": "0056",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0018/0066",
+      "scene": "0018",
+      "frame": "0066",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0018/0076",
+      "scene": "0018",
+      "frame": "0076",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0018/0086",
+      "scene": "0018",
+      "frame": "0086",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0018/0096",
+      "scene": "0018",
+      "frame": "0096",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0018/0106",
+      "scene": "0018",
+      "frame": "0106",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0020/0005",
+      "scene": "0020",
+      "frame": "0005",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0020/0015",
+      "scene": "0020",
+      "frame": "0015",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0020/0025",
+      "scene": "0020",
+      "frame": "0025",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0020/0035",
+      "scene": "0020",
+      "frame": "0035",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0020/0045",
+      "scene": "0020",
+      "frame": "0045",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0020/0055",
+      "scene": "0020",
+      "frame": "0055",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0020/0065",
+      "scene": "0020",
+      "frame": "0065",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0020/0075",
+      "scene": "0020",
+      "frame": "0075",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0020/0085",
+      "scene": "0020",
+      "frame": "0085",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0020/0095",
+      "scene": "0020",
+      "frame": "0095",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0020/0105",
+      "scene": "0020",
+      "frame": "0105",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0020/0115",
+      "scene": "0020",
+      "frame": "0115",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0020/0125",
+      "scene": "0020",
+      "frame": "0125",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0020/0135",
+      "scene": "0020",
+      "frame": "0135",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0020/0145",
+      "scene": "0020",
+      "frame": "0145",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0020/0155",
+      "scene": "0020",
+      "frame": "0155",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0020/0164",
+      "scene": "0020",
+      "frame": "0164",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0020/0174",
+      "scene": "0020",
+      "frame": "0174",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0020/0184",
+      "scene": "0020",
+      "frame": "0184",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0020/0194",
+      "scene": "0020",
+      "frame": "0194",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0020/0204",
+      "scene": "0020",
+      "frame": "0204",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0020/0214",
+      "scene": "0020",
+      "frame": "0214",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0020/0224",
+      "scene": "0020",
+      "frame": "0224",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0020/0234",
+      "scene": "0020",
+      "frame": "0234",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0020/0244",
+      "scene": "0020",
+      "frame": "0244",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0020/0254",
+      "scene": "0020",
+      "frame": "0254",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0020/0264",
+      "scene": "0020",
+      "frame": "0264",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0020/0274",
+      "scene": "0020",
+      "frame": "0274",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0020/0284",
+      "scene": "0020",
+      "frame": "0284",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0020/0294",
+      "scene": "0020",
+      "frame": "0294",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0020/0304",
+      "scene": "0020",
+      "frame": "0304",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0021/0005",
+      "scene": "0021",
+      "frame": "0005",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0021/0015",
+      "scene": "0021",
+      "frame": "0015",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0021/0025",
+      "scene": "0021",
+      "frame": "0025",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0021/0035",
+      "scene": "0021",
+      "frame": "0035",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0021/0045",
+      "scene": "0021",
+      "frame": "0045",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0021/0055",
+      "scene": "0021",
+      "frame": "0055",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0021/0065",
+      "scene": "0021",
+      "frame": "0065",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0021/0075",
+      "scene": "0021",
+      "frame": "0075",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0021/0085",
+      "scene": "0021",
+      "frame": "0085",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0021/0095",
+      "scene": "0021",
+      "frame": "0095",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0021/0105",
+      "scene": "0021",
+      "frame": "0105",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0021/0115",
+      "scene": "0021",
+      "frame": "0115",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0021/0125",
+      "scene": "0021",
+      "frame": "0125",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0021/0135",
+      "scene": "0021",
+      "frame": "0135",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0021/0145",
+      "scene": "0021",
+      "frame": "0145",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0021/0155",
+      "scene": "0021",
+      "frame": "0155",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0021/0165",
+      "scene": "0021",
+      "frame": "0165",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0021/0175",
+      "scene": "0021",
+      "frame": "0175",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0021/0185",
+      "scene": "0021",
+      "frame": "0185",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0021/0195",
+      "scene": "0021",
+      "frame": "0195",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0021/0205",
+      "scene": "0021",
+      "frame": "0205",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0021/0215",
+      "scene": "0021",
+      "frame": "0215",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0021/0225",
+      "scene": "0021",
+      "frame": "0225",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0021/0235",
+      "scene": "0021",
+      "frame": "0235",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0021/0245",
+      "scene": "0021",
+      "frame": "0245",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0021/0255",
+      "scene": "0021",
+      "frame": "0255",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0021/0265",
+      "scene": "0021",
+      "frame": "0265",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0021/0275",
+      "scene": "0021",
+      "frame": "0275",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0021/0285",
+      "scene": "0021",
+      "frame": "0285",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0021/0295",
+      "scene": "0021",
+      "frame": "0295",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0022/0005",
+      "scene": "0022",
+      "frame": "0005",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0022/0015",
+      "scene": "0022",
+      "frame": "0015",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0023/0006",
+      "scene": "0023",
+      "frame": "0006",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0023/0016",
+      "scene": "0023",
+      "frame": "0016",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0023/0026",
+      "scene": "0023",
+      "frame": "0026",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0023/0037",
+      "scene": "0023",
+      "frame": "0037",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0023/0047",
+      "scene": "0023",
+      "frame": "0047",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0023/0058",
+      "scene": "0023",
+      "frame": "0058",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0023/0068",
+      "scene": "0023",
+      "frame": "0068",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0023/0078",
+      "scene": "0023",
+      "frame": "0078",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0024/0006",
+      "scene": "0024",
+      "frame": "0006",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0024/0017",
+      "scene": "0024",
+      "frame": "0017",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0024/0027",
+      "scene": "0024",
+      "frame": "0027",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0024/0038",
+      "scene": "0024",
+      "frame": "0038",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0024/0049",
+      "scene": "0024",
+      "frame": "0049",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0024/0059",
+      "scene": "0024",
+      "frame": "0059",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0026/0005",
+      "scene": "0026",
+      "frame": "0005",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0026/0015",
+      "scene": "0026",
+      "frame": "0015",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0026/0025",
+      "scene": "0026",
+      "frame": "0025",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0027/0007",
+      "scene": "0027",
+      "frame": "0007",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0030/0005",
+      "scene": "0030",
+      "frame": "0005",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0030/0015",
+      "scene": "0030",
+      "frame": "0015",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0030/0025",
+      "scene": "0030",
+      "frame": "0025",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0030/0034",
+      "scene": "0030",
+      "frame": "0034",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0030/0044",
+      "scene": "0030",
+      "frame": "0044",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0030/0054",
+      "scene": "0030",
+      "frame": "0054",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0030/0064",
+      "scene": "0030",
+      "frame": "0064",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0030/0073",
+      "scene": "0030",
+      "frame": "0073",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0030/0083",
+      "scene": "0030",
+      "frame": "0083",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0030/0093",
+      "scene": "0030",
+      "frame": "0093",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0030/0102",
+      "scene": "0030",
+      "frame": "0102",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0030/0112",
+      "scene": "0030",
+      "frame": "0112",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0030/0122",
+      "scene": "0030",
+      "frame": "0122",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0033/0005",
+      "scene": "0033",
+      "frame": "0005",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0033/0015",
+      "scene": "0033",
+      "frame": "0015",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0033/0024",
+      "scene": "0033",
+      "frame": "0024",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0033/0034",
+      "scene": "0033",
+      "frame": "0034",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0033/0043",
+      "scene": "0033",
+      "frame": "0043",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0033/0052",
+      "scene": "0033",
+      "frame": "0052",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0033/0062",
+      "scene": "0033",
+      "frame": "0062",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0037/0005",
+      "scene": "0037",
+      "frame": "0005",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0037/0015",
+      "scene": "0037",
+      "frame": "0015",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0037/0025",
+      "scene": "0037",
+      "frame": "0025",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0037/0035",
+      "scene": "0037",
+      "frame": "0035",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0037/0045",
+      "scene": "0037",
+      "frame": "0045",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0037/0055",
+      "scene": "0037",
+      "frame": "0055",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0037/0065",
+      "scene": "0037",
+      "frame": "0065",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0037/0075",
+      "scene": "0037",
+      "frame": "0075",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0039/0005",
+      "scene": "0039",
+      "frame": "0005",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0039/0015",
+      "scene": "0039",
+      "frame": "0015",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0039/0025",
+      "scene": "0039",
+      "frame": "0025",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0039/0034",
+      "scene": "0039",
+      "frame": "0034",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0039/0044",
+      "scene": "0039",
+      "frame": "0044",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0039/0053",
+      "scene": "0039",
+      "frame": "0053",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0039/0063",
+      "scene": "0039",
+      "frame": "0063",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0039/0073",
+      "scene": "0039",
+      "frame": "0073",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0041/0006",
+      "scene": "0041",
+      "frame": "0006",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0041/0017",
+      "scene": "0041",
+      "frame": "0017",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0041/0027",
+      "scene": "0041",
+      "frame": "0027",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0041/0038",
+      "scene": "0041",
+      "frame": "0038",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0041/0049",
+      "scene": "0041",
+      "frame": "0049",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0041/0059",
+      "scene": "0041",
+      "frame": "0059",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0041/0070",
+      "scene": "0041",
+      "frame": "0070",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0041/0081",
+      "scene": "0041",
+      "frame": "0081",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0041/0091",
+      "scene": "0041",
+      "frame": "0091",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0043/0006",
+      "scene": "0043",
+      "frame": "0006",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0043/0016",
+      "scene": "0043",
+      "frame": "0016",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0043/0026",
+      "scene": "0043",
+      "frame": "0026",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0043/0036",
+      "scene": "0043",
+      "frame": "0036",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0043/0046",
+      "scene": "0043",
+      "frame": "0046",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0043/0056",
+      "scene": "0043",
+      "frame": "0056",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0043/0066",
+      "scene": "0043",
+      "frame": "0066",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0043/0076",
+      "scene": "0043",
+      "frame": "0076",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0043/0086",
+      "scene": "0043",
+      "frame": "0086",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0044/0006",
+      "scene": "0044",
+      "frame": "0006",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0044/0016",
+      "scene": "0044",
+      "frame": "0016",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0044/0026",
+      "scene": "0044",
+      "frame": "0026",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0044/0036",
+      "scene": "0044",
+      "frame": "0036",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0044/0046",
+      "scene": "0044",
+      "frame": "0046",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0044/0056",
+      "scene": "0044",
+      "frame": "0056",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0044/0066",
+      "scene": "0044",
+      "frame": "0066",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0047/0005",
+      "scene": "0047",
+      "frame": "0005",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0047/0015",
+      "scene": "0047",
+      "frame": "0015",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0047/0025",
+      "scene": "0047",
+      "frame": "0025",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0047/0035",
+      "scene": "0047",
+      "frame": "0035",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0047/0045",
+      "scene": "0047",
+      "frame": "0045",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0047/0055",
+      "scene": "0047",
+      "frame": "0055",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0047/0065",
+      "scene": "0047",
+      "frame": "0065",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0047/0075",
+      "scene": "0047",
+      "frame": "0075",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0047/0085",
+      "scene": "0047",
+      "frame": "0085",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0047/0095",
+      "scene": "0047",
+      "frame": "0095",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0047/0105",
+      "scene": "0047",
+      "frame": "0105",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0047/0115",
+      "scene": "0047",
+      "frame": "0115",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0047/0125",
+      "scene": "0047",
+      "frame": "0125",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0047/0135",
+      "scene": "0047",
+      "frame": "0135",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0047/0144",
+      "scene": "0047",
+      "frame": "0144",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0047/0154",
+      "scene": "0047",
+      "frame": "0154",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0047/0164",
+      "scene": "0047",
+      "frame": "0164",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0047/0174",
+      "scene": "0047",
+      "frame": "0174",
+      "split": "dev",
+      "incoming_condition": "saturation"
+    },
+    {
+      "pair_id": "0047/0184",
+      "scene": "0047",
+      "frame": "0184",
+      "split": "dev",
+      "incoming_condition": "speckle_noise"
+    },
+    {
+      "pair_id": "0047/0194",
+      "scene": "0047",
+      "frame": "0194",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0047/0204",
+      "scene": "0047",
+      "frame": "0204",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    },
+    {
+      "pair_id": "0047/0214",
+      "scene": "0047",
+      "frame": "0214",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0047/0224",
+      "scene": "0047",
+      "frame": "0224",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0047/0234",
+      "scene": "0047",
+      "frame": "0234",
+      "split": "dev",
+      "incoming_condition": "gaussian_noise"
+    },
+    {
+      "pair_id": "0047/0244",
+      "scene": "0047",
+      "frame": "0244",
+      "split": "dev",
+      "incoming_condition": "brightness"
+    },
+    {
+      "pair_id": "0047/0254",
+      "scene": "0047",
+      "frame": "0254",
+      "split": "dev",
+      "incoming_condition": "shot_noise"
+    },
+    {
+      "pair_id": "0047/0264",
+      "scene": "0047",
+      "frame": "0264",
+      "split": "dev",
+      "incoming_condition": "contrast"
+    }
+  ],
+  "counts": {
+    "brightness": 55,
+    "contrast": 55,
+    "saturation": 54,
+    "gaussian_noise": 55,
+    "shot_noise": 54,
+    "speckle_noise": 55
+  },
+  "per_sequence_counts": [
+    {
+      "scene": "0002",
+      "pairs": 13,
+      "counts": {
+        "brightness": 2,
+        "contrast": 2,
+        "saturation": 2,
+        "gaussian_noise": 2,
+        "shot_noise": 3,
+        "speckle_noise": 2
+      }
+    },
+    {
+      "scene": "0004",
+      "pairs": 10,
+      "counts": {
+        "brightness": 2,
+        "contrast": 2,
+        "saturation": 1,
+        "gaussian_noise": 1,
+        "shot_noise": 2,
+        "speckle_noise": 2
+      }
+    },
+    {
+      "scene": "0006",
+      "pairs": 19,
+      "counts": {
+        "brightness": 3,
+        "contrast": 3,
+        "saturation": 3,
+        "gaussian_noise": 3,
+        "shot_noise": 3,
+        "speckle_noise": 4
+      }
+    },
+    {
+      "scene": "0007",
+      "pairs": 15,
+      "counts": {
+        "brightness": 2,
+        "contrast": 3,
+        "saturation": 2,
+        "gaussian_noise": 2,
+        "shot_noise": 3,
+        "speckle_noise": 3
+      }
+    },
+    {
+      "scene": "0008",
+      "pairs": 18,
+      "counts": {
+        "brightness": 3,
+        "contrast": 3,
+        "saturation": 3,
+        "gaussian_noise": 3,
+        "shot_noise": 3,
+        "speckle_noise": 3
+      }
+    },
+    {
+      "scene": "0009",
+      "pairs": 12,
+      "counts": {
+        "brightness": 2,
+        "contrast": 2,
+        "saturation": 2,
+        "gaussian_noise": 2,
+        "shot_noise": 2,
+        "speckle_noise": 2
+      }
+    },
+    {
+      "scene": "0012",
+      "pairs": 27,
+      "counts": {
+        "brightness": 4,
+        "contrast": 5,
+        "saturation": 4,
+        "gaussian_noise": 4,
+        "shot_noise": 5,
+        "speckle_noise": 5
+      }
+    },
+    {
+      "scene": "0013",
+      "pairs": 8,
+      "counts": {
+        "brightness": 1,
+        "contrast": 1,
+        "saturation": 2,
+        "gaussian_noise": 2,
+        "shot_noise": 1,
+        "speckle_noise": 1
+      }
+    },
+    {
+      "scene": "0015",
+      "pairs": 26,
+      "counts": {
+        "brightness": 5,
+        "contrast": 4,
+        "saturation": 4,
+        "gaussian_noise": 5,
+        "shot_noise": 4,
+        "speckle_noise": 4
+      }
+    },
+    {
+      "scene": "0018",
+      "pairs": 11,
+      "counts": {
+        "brightness": 2,
+        "contrast": 2,
+        "saturation": 2,
+        "gaussian_noise": 2,
+        "shot_noise": 1,
+        "speckle_noise": 2
+      }
+    },
+    {
+      "scene": "0020",
+      "pairs": 31,
+      "counts": {
+        "brightness": 5,
+        "contrast": 6,
+        "saturation": 5,
+        "gaussian_noise": 5,
+        "shot_noise": 5,
+        "speckle_noise": 5
+      }
+    },
+    {
+      "scene": "0021",
+      "pairs": 30,
+      "counts": {
+        "brightness": 5,
+        "contrast": 5,
+        "saturation": 5,
+        "gaussian_noise": 5,
+        "shot_noise": 5,
+        "speckle_noise": 5
+      }
+    },
+    {
+      "scene": "0022",
+      "pairs": 2,
+      "counts": {
+        "brightness": 1,
+        "contrast": 0,
+        "saturation": 0,
+        "gaussian_noise": 0,
+        "shot_noise": 0,
+        "speckle_noise": 1
+      }
+    },
+    {
+      "scene": "0023",
+      "pairs": 8,
+      "counts": {
+        "brightness": 1,
+        "contrast": 2,
+        "saturation": 1,
+        "gaussian_noise": 1,
+        "shot_noise": 1,
+        "speckle_noise": 2
+      }
+    },
+    {
+      "scene": "0024",
+      "pairs": 6,
+      "counts": {
+        "brightness": 1,
+        "contrast": 1,
+        "saturation": 1,
+        "gaussian_noise": 1,
+        "shot_noise": 1,
+        "speckle_noise": 1
+      }
+    },
+    {
+      "scene": "0026",
+      "pairs": 3,
+      "counts": {
+        "brightness": 0,
+        "contrast": 0,
+        "saturation": 1,
+        "gaussian_noise": 1,
+        "shot_noise": 1,
+        "speckle_noise": 0
+      }
+    },
+    {
+      "scene": "0027",
+      "pairs": 1,
+      "counts": {
+        "brightness": 0,
+        "contrast": 0,
+        "saturation": 0,
+        "gaussian_noise": 1,
+        "shot_noise": 0,
+        "speckle_noise": 0
+      }
+    },
+    {
+      "scene": "0030",
+      "pairs": 13,
+      "counts": {
+        "brightness": 3,
+        "contrast": 2,
+        "saturation": 2,
+        "gaussian_noise": 2,
+        "shot_noise": 2,
+        "speckle_noise": 2
+      }
+    },
+    {
+      "scene": "0033",
+      "pairs": 7,
+      "counts": {
+        "brightness": 1,
+        "contrast": 1,
+        "saturation": 1,
+        "gaussian_noise": 1,
+        "shot_noise": 2,
+        "speckle_noise": 1
+      }
+    },
+    {
+      "scene": "0037",
+      "pairs": 8,
+      "counts": {
+        "brightness": 2,
+        "contrast": 1,
+        "saturation": 1,
+        "gaussian_noise": 2,
+        "shot_noise": 1,
+        "speckle_noise": 1
+      }
+    },
+    {
+      "scene": "0039",
+      "pairs": 8,
+      "counts": {
+        "brightness": 1,
+        "contrast": 2,
+        "saturation": 1,
+        "gaussian_noise": 1,
+        "shot_noise": 1,
+        "speckle_noise": 2
+      }
+    },
+    {
+      "scene": "0041",
+      "pairs": 9,
+      "counts": {
+        "brightness": 2,
+        "contrast": 1,
+        "saturation": 2,
+        "gaussian_noise": 2,
+        "shot_noise": 1,
+        "speckle_noise": 1
+      }
+    },
+    {
+      "scene": "0043",
+      "pairs": 9,
+      "counts": {
+        "brightness": 2,
+        "contrast": 1,
+        "saturation": 2,
+        "gaussian_noise": 2,
+        "shot_noise": 1,
+        "speckle_noise": 1
+      }
+    },
+    {
+      "scene": "0044",
+      "pairs": 7,
+      "counts": {
+        "brightness": 1,
+        "contrast": 1,
+        "saturation": 2,
+        "gaussian_noise": 1,
+        "shot_noise": 1,
+        "speckle_noise": 1
+      }
+    },
+    {
+      "scene": "0047",
+      "pairs": 27,
+      "counts": {
+        "brightness": 4,
+        "contrast": 5,
+        "saturation": 5,
+        "gaussian_noise": 4,
+        "shot_noise": 5,
+        "speckle_noise": 4
+      }
+    }
+  ],
+  "shared_models": [
+    "raft",
+    "acv"
+  ],
+  "independent_of_test_assignment_seeds": true,
+  "bank_sha256": "39ae796cfd9c7798a214cd4c1c3c42a4218788d1a9de01a2ca88c3c62beb4fee",
+  "status": "predetermined immutable assignment; full execution pending separate GO"
+}

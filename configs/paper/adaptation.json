@@ -1,0 +1,588 @@
+{
+  "protocol_id": "sensor_selection_v4",
+  "status": "user_approved_heldout_seed101_generic_with_pixel_fusion",
+  "reporting": {
+    "scope": "held-out evaluation split, 172 pairs /12 sequences, seed101 only",
+    "primary_aggregation": "per-condition pooled native sufficient statistics, equal six-corruption macro; paired clean reference grouped by same incoming assignment",
+    "secondary": "pooled all observations and GT<192 sensitivity",
+    "CI": "paired sequence-cluster bootstrap, 1000 replicates, seed1741; no multi-seed SD from one seed"
+  },
+  "storage_root": "/storage1/USER/stereo-risk/outputs",
+  "manifest": "manifests/sensor_v4_500.json",
+  "sampling": {
+    "pairs": 500,
+    "allocation": "Hamilton largest remainder proportional to sequence length",
+    "temporal": "midpoints of equal-count temporal strata",
+    "split_seed": 20260925,
+    "dev_sequences": 25,
+    "test_sequences": 12
+  },
+  "models": {
+    "raft": {
+      "checkpoint": "checkpoints/raftstereo-sceneflow.pth",
+      "checkpoint_sha256": "ba75bdcb379b4c3942d1e714565d0e66e6b2450a3da8129f54073302d67e0a6d",
+      "batch": 2,
+      "iterations": 32,
+      "last_n": 4,
+      "internal_signals": [
+        "late_std",
+        "late_mean_update",
+        "final_update",
+        "negative_peak",
+        "negative_margin",
+        "entropy"
+      ]
+    },
+    "acv": {
+      "checkpoint": "checkpoints/acvnet/ACVNet/sceneflow.ckpt",
+      "checkpoint_sha256": "a48e1f719dfaa07a6376ffd7b8ac6d560afc72c558793efe665c659924f904ac",
+      "batch": 4,
+      "maxdisp": 192,
+      "internal_signals": [
+        "negative_peak",
+        "negative_margin",
+        "entropy",
+        "attention_negative_peak",
+        "attention_negative_margin",
+        "attention_entropy"
+      ]
+    }
+  },
+  "inference": {
+    "height": 1080,
+    "width": 1920,
+    "precision": "fp32",
+    "tf32": false,
+    "gpu_processes": 1,
+    "cpu_preprocess_workers": 2,
+    "cpu_metric_workers": 2,
+    "minimum_free_margin_gib": 1.0
+  },
+  "conditions": [
+    "brightness",
+    "contrast",
+    "saturation",
+    "gaussian_noise",
+    "shot_noise",
+    "speckle_noise"
+  ],
+  "corruption": {
+    "source": "https://arxiv.org/html/2505.09368v2#A1.SS3.SSS3",
+    "input_space": "normalized sRGB, float32 HWC",
+    "quantization": "clip to [0,1], multiply by 255, np.rint, uint8",
+    "strength_convention": "one published setting per corruption; no invented severity sweep",
+    "input_seed": 20260925,
+    "noise": "NumPy PCG64; independent per RGB element, eye and frame; stable across models and assignment repetitions",
+    "brightness": {
+      "offset": 0.39,
+      "convention": "literal Eq.4 addition in RGB; HSV V ancestor ambiguity explicitly retained"
+    },
+    "contrast": {
+      "factor": 0.16,
+      "center": "per-image, per-channel spatial mean, float64 accumulation"
+    },
+    "saturation": {
+      "scale": 2.3,
+      "offset": 0.01,
+      "conversion": "OpenCV float RGB-HSV-RGB; H degrees, S/V [0,1]"
+    },
+    "gaussian_noise": {
+      "sigma": 0.115
+    },
+    "shot_noise": {
+      "rate": 23.0
+    },
+    "speckle_noise": {
+      "sigma": 0.45,
+      "convention": "I + I * sigma * independent standard normal HWC"
+    }
+  },
+  "metrics": {
+    "native": [
+      "Abs",
+      "1px",
+      "D1"
+    ],
+    "valid": "all four native-grid GT candidates finite; zero disparity retained",
+    "error": "min over four absolute errors, GT already in native image pixel units",
+    "D1": "error > 3 AND error > 0.05 * max(abs(four GT candidates))",
+    "primary_aggregation": "sum sufficient statistics over all valid pixels; six-corruption macro excludes clean",
+    "secondary_support": "all four GT candidates finite and 0 <= d < 192, both models",
+    "bootstrap": {
+      "unit": "sequence",
+      "replicates": 1000,
+      "seed": 1741,
+      "confidence": 0.95
+    },
+    "table2_sample_pixels_per_pair": 20000,
+    "analysis_cache": {
+      "format": "scene_hdf5_pool_v1",
+      "max_pool_pixels": 50000,
+      "pool_seed": 20260925,
+      "chunk_pixels": 4096,
+      "compression": "none",
+      "subset_seed": 0,
+      "subset_rule": "shared ordered pool; nested prefix by default; optional seeded permutation within saved pool",
+      "coordinates": "one shared GT-valid x>=4 coordinate pool per pair, across models/conditions/signals",
+      "full_maps": false,
+      "common_support": "GT-only uint8 mask stored once per pair alongside shared coordinates; secondary filtering of the chosen analysis prefix",
+      "status": "50k storage plus 20k primary analysis explicitly adopted by user"
+    },
+    "table2_sample_mask": "GT-valid, x >= 4 for both models; no masking based on score magnitude or error",
+    "table2": {
+      "label": "native D1",
+      "point_metrics": [
+        "AUROC",
+        "AUPR_average_precision",
+        "Spearman",
+        "prevalence"
+      ],
+      "aggregation": "condition-specific pooled sampled pixels, then equal-weight six-corruption macro",
+      "ci": "sequence cluster bootstrap with fixed score histogram; exact point metrics and histogram approximation check",
+      "ci_score_bins": 4096,
+      "ci_max_point_error": 0.002
+    }
+  },
+  "signals": {
+    "orientation": "higher = higher failure risk",
+    "baselines": [
+      "random",
+      "negative_texture",
+      "disparity_magnitude",
+      "disparity_gradient"
+    ],
+    "selection": {
+      "split": "dev",
+      "conditions": "six corruptions only",
+      "primary": "macro AUROC",
+      "auroc_practical_tie": 0.005,
+      "secondary": "maximum macro AP among AUROC practical ties",
+      "aupr_practical_tie": 0.0,
+      "ap_numerical_tie_atol": 1e-12,
+      "ap_numerical_tie_rtol": 0.0,
+      "tertiary": "worst-corruption AUROC only for numerical AP ties; no practical AP tie band",
+      "baseline_eligible": false,
+      "manual_freeze_required": true
+    },
+    "frozen_primary": {
+      "raft": "late_std",
+      "acv": "attention_entropy"
+    },
+    "primary_freeze_artifact": "freezes/primary_signals_v4_dev20k40k.json"
+  },
+  "table3": {
+    "K": 30,
+    "candidates": [
+      {
+        "id": "joint_01",
+        "parameters": {
+          "exposure": 0.7441608855525557,
+          "contrast": -0.5240381696815601,
+          "gamma": 0.9593542779970778,
+          "saturation": 0.14717934926231035,
+          "detail": 0.0018925218143075462
+        }
+      },
+      {
+        "id": "joint_02",
+        "parameters": {
+          "exposure": -0.7529603291796767,
+          "contrast": 0.18808664152907573,
+          "gamma": -0.4756385321817802,
+          "saturation": -0.592331984927382,
+          "detail": -0.23822917306995361
+        }
+      },
+      {
+        "id": "joint_03",
+        "parameters": {
+          "exposure": -0.5671705922305976,
+          "contrast": -0.4226772693978842,
+          "gamma": -0.8585490409254314,
+          "saturation": -0.6744351126518475,
+          "detail": -0.5591358142314574
+        }
+      },
+      {
+        "id": "joint_04",
+        "parameters": {
+          "exposure": -0.28001224722717855,
+          "contrast": -0.4530565383626266,
+          "gamma": 0.40487607815542503,
+          "saturation": 0.7755372155641636,
+          "detail": -0.1735026733430075
+        }
+      },
+      {
+        "id": "joint_05",
+        "parameters": {
+          "exposure": -0.509833757648285,
+          "contrast": -0.7320653920454513,
+          "gamma": 0.1530513876142774,
+          "saturation": 0.07278199553779152,
+          "detail": 0.9990285509589734
+        }
+      },
+      {
+        "id": "joint_06",
+        "parameters": {
+          "exposure": -0.3751170961450939,
+          "contrast": 0.042166763084825476,
+          "gamma": 0.5198433390926847,
+          "saturation": 0.8985238058668767,
+          "detail": 0.7020175125113195
+        }
+      },
+      {
+        "id": "joint_07",
+        "parameters": {
+          "exposure": 0.03236011992919008,
+          "contrast": 0.2617001134577741,
+          "gamma": -0.87618269424898,
+          "saturation": 0.2610300612106071,
+          "detail": -0.06833497330994343
+        }
+      },
+      {
+        "id": "joint_08",
+        "parameters": {
+          "exposure": 0.22573843702149698,
+          "contrast": 0.702370231032877,
+          "gamma": -0.7143560128471576,
+          "saturation": -0.15078021667303665,
+          "detail": 0.42749721619096226
+        }
+      },
+      {
+        "id": "joint_09",
+        "parameters": {
+          "exposure": -0.9971356877940487,
+          "contrast": -0.31482941058898906,
+          "gamma": -0.7906722075252639,
+          "saturation": 0.6946672538119294,
+          "detail": -0.857932689854308
+        }
+      },
+      {
+        "id": "joint_10",
+        "parameters": {
+          "exposure": -0.6121599628422326,
+          "contrast": 0.583132179899948,
+          "gamma": 0.11178750099762258,
+          "saturation": -0.9593489192078926,
+          "detail": 0.8444416450011469
+        }
+      },
+      {
+        "id": "joint_11",
+        "parameters": {
+          "exposure": 0.18227497135139448,
+          "contrast": 0.28638620498362166,
+          "gamma": -0.4352856424651912,
+          "saturation": -0.38396863408546145,
+          "detail": -0.2774139066338638
+        }
+      },
+      {
+        "id": "joint_12",
+        "parameters": {
+          "exposure": 0.7029838801968544,
+          "contrast": 0.6261868768461134,
+          "gamma": -0.5819718364760397,
+          "saturation": -0.08968959282039324,
+          "detail": -0.7296857494214266
+        }
+      },
+      {
+        "id": "joint_13",
+        "parameters": {
+          "exposure": 0.5852583075116402,
+          "contrast": 0.0641509574044552,
+          "gamma": -0.6326161357363302,
+          "saturation": -0.90856703762853,
+          "detail": -0.642366747523466
+        }
+      },
+      {
+        "id": "joint_14",
+        "parameters": {
+          "exposure": 0.8122534738153797,
+          "contrast": -0.3473295858912539,
+          "gamma": -0.26313192473858293,
+          "saturation": 0.03854250230802503,
+          "detail": -0.8707380904254469
+        }
+      },
+      {
+        "id": "joint_15",
+        "parameters": {
+          "exposure": -0.8957701844793078,
+          "contrast": 0.411938962783549,
+          "gamma": -0.1327920214221041,
+          "saturation": -0.4214969361668953,
+          "detail": 0.3747094243755065
+        }
+      },
+      {
+        "id": "joint_16",
+        "parameters": {
+          "exposure": 0.6507816477600092,
+          "contrast": -0.13989345389525287,
+          "gamma": -0.2719131157179425,
+          "saturation": 0.5305286664137354,
+          "detail": -0.9368168245103939
+        }
+      },
+      {
+        "id": "joint_17",
+        "parameters": {
+          "exposure": 0.46793406776583635,
+          "contrast": -0.05542424770778498,
+          "gamma": 0.055315105392357955,
+          "saturation": 0.8470249588567509,
+          "detail": -0.5027306659732498
+        }
+      },
+      {
+        "id": "joint_18",
+        "parameters": {
+          "exposure": -0.4585944189643606,
+          "contrast": 0.6420296263532839,
+          "gamma": 0.6017135216246434,
+          "saturation": 0.3884557774133659,
+          "detail": 0.6224449571455242
+        }
+      },
+      {
+        "id": "joint_19",
+        "parameters": {
+          "exposure": 0.40493073343714703,
+          "contrast": -0.6155345263388927,
+          "gamma": 0.7205102763965014,
+          "saturation": 0.30823282532694374,
+          "detail": 0.77211813662897
+        }
+      },
+      {
+        "id": "joint_20",
+        "parameters": {
+          "exposure": -0.010574232018963792,
+          "contrast": 0.13269059557654583,
+          "gamma": 0.20159770557450085,
+          "saturation": 0.9514748588243822,
+          "detail": 0.21750760424389814
+        }
+      },
+      {
+        "id": "joint_21",
+        "parameters": {
+          "exposure": -0.14031669543221303,
+          "contrast": -0.16568004913559398,
+          "gamma": 0.8140236795178852,
+          "saturation": 0.5367938121006008,
+          "detail": -0.7507629656708761
+        }
+      },
+      {
+        "id": "joint_22",
+        "parameters": {
+          "exposure": 0.9893921670464931,
+          "contrast": 0.44547814672095365,
+          "gamma": 0.567237150154924,
+          "saturation": -0.4959834601939369,
+          "detail": 0.1964440330619257
+        }
+      },
+      {
+        "id": "joint_23",
+        "parameters": {
+          "exposure": -0.8236465293488942,
+          "contrast": 0.33905535574810797,
+          "gamma": -0.38272988927239615,
+          "saturation": -0.7815007113607533,
+          "detail": -0.4013958779053326
+        }
+      },
+      {
+        "id": "joint_24",
+        "parameters": {
+          "exposure": -0.1058402923806887,
+          "contrast": -0.5591562023977651,
+          "gamma": 0.31814854171181883,
+          "saturation": 0.6545416284099908,
+          "detail": 0.9324615117034434
+        }
+      },
+      {
+        "id": "joint_25",
+        "parameters": {
+          "exposure": -0.7130305945879073,
+          "contrast": -0.2552535849208194,
+          "gamma": -0.1861862572620715,
+          "saturation": -0.2887252259856249,
+          "detail": 0.0948320547196626
+        }
+      },
+      {
+        "id": "joint_26",
+        "parameters": {
+          "exposure": -0.21940660449846228,
+          "contrast": 0.5173877028833191,
+          "gamma": -0.9643056829334109,
+          "saturation": -0.03730552259412123,
+          "detail": -0.36744274331534565
+        }
+      },
+      {
+        "id": "joint_27",
+        "parameters": {
+          "exposure": 0.3382502298644505,
+          "contrast": -0.02590051981853414,
+          "gamma": -0.059120382162441976,
+          "saturation": 0.41389662586529874,
+          "detail": 0.30334083111447585
+        }
+      },
+      {
+        "id": "joint_28",
+        "parameters": {
+          "exposure": 0.10533893059588006,
+          "contrast": -0.6771225788838953,
+          "gamma": 0.7884371004001416,
+          "saturation": -0.6437136134903958,
+          "detail": -0.06522265803400962
+        }
+      },
+      {
+        "id": "joint_29",
+        "parameters": {
+          "exposure": 0.901594501040641,
+          "contrast": -0.7667662455829323,
+          "gamma": 0.34825072887995634,
+          "saturation": -0.8431185658978506,
+          "detail": 0.5227777677897294
+        }
+      },
+      {
+        "id": "joint_30",
+        "parameters": {
+          "exposure": 0.3110457199599306,
+          "contrast": 0.7909136731819295,
+          "gamma": 0.9255969851479848,
+          "saturation": -0.23786165600607767,
+          "detail": 0.570896317178679
+        }
+      }
+    ],
+    "bank_status": "locked_predetermined_LHS_bank_for_approved_heldout_seed101",
+    "frozen_artifact": null,
+    "rank_selection": {
+      "risk_ties": "average",
+      "global_score_atol": 1e-12,
+      "global_score_rtol": 0.0,
+      "global_ties": "seeded uniform among tied candidate IDs",
+      "tie_seed": 7813,
+      "exclude_left_columns": 4,
+      "chunk_pixels": 65536,
+      "seed_key": "purpose/pair/incoming condition/model/primary signal; independent of assignment seed and loader order"
+    },
+    "random_selector_seed": 1907,
+    "selection_revision": "pixel_rank_v1",
+    "signal_aggregation": "Signal-Global: mean across fixed-support pixels of within-pixel candidate ranks; lower risk ranks better; never mean raw risk",
+    "methods": [
+      "Clean",
+      "Identity",
+      "Random",
+      "Signal-Global",
+      "Signal-Pixel Fusion",
+      "Global Oracle",
+      "Pixel Oracle"
+    ],
+    "dev_diagnostics": {
+      "heldout_pixel_fusion_approved": true
+    }
+  },
+  "generic": {
+    "bank_manifest": "manifests/generic_joint_v1_candidates.json",
+    "assignment_manifest": "manifests/generic_joint_v1_dev_assignment.json",
+    "full_dev_status": "STOP_NOT_RUN",
+    "main_or_secondary": "main generic model-agnostic observation selection",
+    "operator": {
+      "order": [
+        "linear_exposure",
+        "contrast",
+        "clip_before_gamma",
+        "gamma",
+        "saturation",
+        "detail",
+        "final_clip_quantize"
+      ],
+      "exposure": "sRGB to linear; multiply 2**EV; unclipped inverse sRGB transfer (float highlights preserved)",
+      "contrast": "sRGB, per-image per-channel float64 spatial mean center; factor 2**c",
+      "gamma": "clip RGB [0,1], convert float32, then x**(2**g)",
+      "saturation": "OpenCV float RGB to HSV; S *= 2**s; S clipped [0,1]; HSV to RGB",
+      "detail": "d<0: Gaussian sigma=2*abs(d); d>0: x+2*d*(x-Gaussian(x,sigma=1)); d=0 identity; BORDER_REFLECT_101",
+      "quantization": "final clip [0,1], multiply255, np.rint, uint8; no intermediate uint8",
+      "identity": "exact input copy",
+      "spatial_warp": false,
+      "GT_change": false,
+      "stereo_parameters": "identical vector per candidate, content-dependent channel means computed separately per eye"
+    },
+    "methods": [
+      "Clean",
+      "Identity",
+      "Random",
+      "Signal-Global",
+      "Signal-Pixel Fusion",
+      "Global Oracle",
+      "Pixel Oracle"
+    ],
+    "fixed_best": false,
+    "heldout_approved": true,
+    "assignment_seed": 101,
+    "reporting": "per-condition pooled native pixels, equal six-corruption macro, sequence-cluster CI; parameter vectors and range-normalized Signal/Oracle L2 distance"
+  },
+  "broad_sweep": {
+    "native_count_threads": 4
+  },
+  "candidate_adequacy": {
+    "pool": {
+      "pixels": 50000,
+      "seed": 36291,
+      "domain": "fixed input geometry x>=4, independent of GT/prediction/risk; shared across models"
+    },
+    "full_maps_saved": false
+  },
+  "heldout_run": {
+    "seed": 101,
+    "observations": 172,
+    "sequences": 12,
+    "conditions": [
+      "brightness",
+      "contrast",
+      "saturation",
+      "gaussian_noise",
+      "shot_noise",
+      "speckle_noise"
+    ],
+    "methods": [
+      "Clean",
+      "Identity",
+      "Random",
+      "Signal-Global",
+      "Signal-Pixel Fusion",
+      "Global Oracle",
+      "Pixel Oracle"
+    ],
+    "Fixed_best": false,
+    "further_seeds_authorized": false,
+    "qualitative_pair_ids": [
+      "0016/0066",
+      "0014/0154",
+      "0025/0015"
+    ],
+    "qualitative_selection": "median lexical assigned pair for contrast/Gaussian/shot, distinct sequences, before outcomes",
+    "dense_maps": "only preselected qualitative pairs; remaining observations 50k geometry pool",
+    "sampled_pool_pixels": 50000
+  }
+}

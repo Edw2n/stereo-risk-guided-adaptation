@@ -1,0 +1,3 @@
+# Preserve exact source/evidence bytes.
+vendor/** -text -whitespace
+*.csv -text whitespace=cr-at-eol

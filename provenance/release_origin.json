@@ -1,0 +1,7 @@
+{
+  "source_commit": "5b8552a56c86a85dc3b7a8e6d8c6733d8f5e59b0",
+  "scope": "Paper and challenge reproduction; local release preparation.",
+  "numerical_kernels": "Copied byte-for-byte; orchestration and documentation are maintained separately.",
+  "config_changes": "Asset/output path placeholders only; revision plan hash follows the portable config.",
+  "published": false
+}

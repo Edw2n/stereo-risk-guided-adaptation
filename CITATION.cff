@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Please cite the paper when using this code."
+title: "From Failure Observability to Risk-Guided Input Adaptation in Stereo Matching"
+type: software
+authors:
+  - family-names: Baek
+    given-names: Eunsu
+repository-code: "https://github.com/Edw2n/stereo-risk-guided-adaptation"
+url: "https://openreview.net/forum?id=tG2S5yNu2a"
+license: MIT
+preferred-citation:
+  type: conference-paper
+  title: "From Failure Observability to Risk-Guided Input Adaptation in Stereo Matching"
+  authors:
+    - family-names: Baek
+      given-names: Eunsu
+  collection-title: "RoCo-Spring: The Robust Correspondence Challenge"
+  year: 2026
+  url: "https://openreview.net/forum?id=tG2S5yNu2a"

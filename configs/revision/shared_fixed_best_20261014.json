@@ -1,0 +1,14 @@
+{
+  "scope": "one shared candidate across both models, all conditions, all assignments",
+  "model_weights": {
+    "raft": 0.5,
+    "acv": 0.5
+  },
+  "selection": "mean of model-wise pooled dev D1; tie mean Abs, mean 1px, lexical ID",
+  "observations_per_model": 328,
+  "sequences": 25,
+  "heldout_used": false,
+  "plan_sha256": "cad12d1ca20c5e358ff971a58f87d6f219a3ed30259901c625df41051d17ba70",
+  "candidate_id": "joint_14",
+  "authorization": "User requested a single Fixed-best shared by both models, 2026-10-14"
+}

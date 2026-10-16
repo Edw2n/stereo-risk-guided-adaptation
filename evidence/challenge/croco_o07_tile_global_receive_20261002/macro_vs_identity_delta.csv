@@ -1,0 +1,7 @@
+scope,method,eye,completed_conditions,expected_conditions,identity_delta_abs,delta_abs,delta_reduction_px,delta_reduction_percent
+all20_equal_macro,Identity,left,20,20,2.3290572214573695,2.3290572214573695,0.0,0.0
+all20_equal_macro,tile_disparity_std_unweighted/global,left,20,20,2.3290572214573695,2.0110584303438857,0.31799879111348384,13.653541363595235
+all20_equal_macro,Identity,right,20,20,2.3721854493356336,2.3721854493356336,0.0,0.0
+all20_equal_macro,tile_disparity_std_unweighted/global,right,20,20,2.3721854493356336,2.066677014158575,0.3055084351770585,12.878775361455014
+all20_equal_macro,Identity,both,20,20,2.3506213353965024,2.3506213353965024,0.0,0.0
+all20_equal_macro,tile_disparity_std_unweighted/global,both,20,20,2.3506213353965024,2.0388677222512315,0.31175361314527095,13.262604590997826

@@ -1,0 +1,309 @@
+{
+  "created_unix": 1790648910.0784998,
+  "archives": [
+    {
+      "filename": "test_frame_left.zip",
+      "condition": "clean",
+      "datafile_id": 199013,
+      "bytes": 2995538894,
+      "checksum": {
+        "type": "MD5",
+        "value": "f0c52a7e2d5ba440eb31338b46fbc4b4"
+      },
+      "url": "https://darus.uni-stuttgart.de/api/access/datafile/199013",
+      "metadata_url": "https://darus.uni-stuttgart.de/api/datasets/:persistentId/?persistentId=doi:10.18419/DARUS-3376"
+    },
+    {
+      "filename": "test_frame_right.zip",
+      "condition": "clean",
+      "datafile_id": 199014,
+      "bytes": 2996583105,
+      "checksum": {
+        "type": "MD5",
+        "value": "914b464af2978a22d8800a94e721712d"
+      },
+      "url": "https://darus.uni-stuttgart.de/api/access/datafile/199014",
+      "metadata_url": "https://darus.uni-stuttgart.de/api/datasets/:persistentId/?persistentId=doi:10.18419/DARUS-3376"
+    },
+    {
+      "filename": "brightness.zip",
+      "condition": "brightness",
+      "datafile_id": 382158,
+      "bytes": 6507003526,
+      "checksum": {
+        "type": "MD5",
+        "value": "fd328272ee8258f40ff60cd1d2788495"
+      },
+      "url": "https://darus.uni-stuttgart.de/api/access/datafile/382158",
+      "metadata_url": "https://darus.uni-stuttgart.de/api/datasets/:persistentId/?persistentId=doi:10.18419/DARUS-5047"
+    },
+    {
+      "filename": "contrast.zip",
+      "condition": "contrast",
+      "datafile_id": 382152,
+      "bytes": 3038605228,
+      "checksum": {
+        "type": "MD5",
+        "value": "9df74aff27e78a82e95aa69b06f450a0"
+      },
+      "url": "https://darus.uni-stuttgart.de/api/access/datafile/382152",
+      "metadata_url": "https://darus.uni-stuttgart.de/api/datasets/:persistentId/?persistentId=doi:10.18419/DARUS-5047"
+    },
+    {
+      "filename": "defocus_blur.zip",
+      "condition": "defocus_blur",
+      "datafile_id": 382169,
+      "bytes": 2864075539,
+      "checksum": {
+        "type": "MD5",
+        "value": "0a6670887db444cf108c9a989f93f921"
+      },
+      "url": "https://darus.uni-stuttgart.de/api/access/datafile/382169",
+      "metadata_url": "https://darus.uni-stuttgart.de/api/datasets/:persistentId/?persistentId=doi:10.18419/DARUS-5047"
+    },
+    {
+      "filename": "elastic_transform.zip",
+      "condition": "elastic_transform",
+      "datafile_id": 382153,
+      "bytes": 5398173412,
+      "checksum": {
+        "type": "MD5",
+        "value": "a766ba2e5f5eacf1e10372929d0a2f04"
+      },
+      "url": "https://darus.uni-stuttgart.de/api/access/datafile/382153",
+      "metadata_url": "https://darus.uni-stuttgart.de/api/datasets/:persistentId/?persistentId=doi:10.18419/DARUS-5047"
+    },
+    {
+      "filename": "fog.zip",
+      "condition": "fog",
+      "datafile_id": 382157,
+      "bytes": 4374030938,
+      "checksum": {
+        "type": "MD5",
+        "value": "938c6fd2196df97241514bf9ad0f19df"
+      },
+      "url": "https://darus.uni-stuttgart.de/api/access/datafile/382157",
+      "metadata_url": "https://darus.uni-stuttgart.de/api/datasets/:persistentId/?persistentId=doi:10.18419/DARUS-5047"
+    },
+    {
+      "filename": "frost.zip",
+      "condition": "frost",
+      "datafile_id": 382168,
+      "bytes": 6598269747,
+      "checksum": {
+        "type": "MD5",
+        "value": "ef541d3a61960d547616b35ef83ef01c"
+      },
+      "url": "https://darus.uni-stuttgart.de/api/access/datafile/382168",
+      "metadata_url": "https://darus.uni-stuttgart.de/api/datasets/:persistentId/?persistentId=doi:10.18419/DARUS-5047"
+    },
+    {
+      "filename": "gaussian_blur.zip",
+      "condition": "gaussian_blur",
+      "datafile_id": 382167,
+      "bytes": 2533301561,
+      "checksum": {
+        "type": "MD5",
+        "value": "55f0fbe8cc735bade8f79f1f16bf6e37"
+      },
+      "url": "https://darus.uni-stuttgart.de/api/access/datafile/382167",
+      "metadata_url": "https://darus.uni-stuttgart.de/api/datasets/:persistentId/?persistentId=doi:10.18419/DARUS-5047"
+    },
+    {
+      "filename": "gaussian_noise.zip",
+      "condition": "gaussian_noise",
+      "datafile_id": 382161,
+      "bytes": 11469449477,
+      "checksum": {
+        "type": "MD5",
+        "value": "a153d4a4f00cfead85c9f02915e16176"
+      },
+      "url": "https://darus.uni-stuttgart.de/api/access/datafile/382161",
+      "metadata_url": "https://darus.uni-stuttgart.de/api/datasets/:persistentId/?persistentId=doi:10.18419/DARUS-5047"
+    },
+    {
+      "filename": "glass_blur.zip",
+      "condition": "glass_blur",
+      "datafile_id": 382166,
+      "bytes": 3323274685,
+      "checksum": {
+        "type": "MD5",
+        "value": "430c2b03099f2d1247a086ee79899898"
+      },
+      "url": "https://darus.uni-stuttgart.de/api/access/datafile/382166",
+      "metadata_url": "https://darus.uni-stuttgart.de/api/datasets/:persistentId/?persistentId=doi:10.18419/DARUS-5047"
+    },
+    {
+      "filename": "impulse_noise.zip",
+      "condition": "impulse_noise",
+      "datafile_id": 382165,
+      "bytes": 7844688527,
+      "checksum": {
+        "type": "MD5",
+        "value": "27bded75e845609a52b9cfd5ec07cc04"
+      },
+      "url": "https://darus.uni-stuttgart.de/api/access/datafile/382165",
+      "metadata_url": "https://darus.uni-stuttgart.de/api/datasets/:persistentId/?persistentId=doi:10.18419/DARUS-5047"
+    },
+    {
+      "filename": "jpeg_compression.zip",
+      "condition": "jpeg_compression",
+      "datafile_id": 382154,
+      "bytes": 1089898616,
+      "checksum": {
+        "type": "MD5",
+        "value": "865face5c72e613f8af9c2c77f6afeb0"
+      },
+      "url": "https://darus.uni-stuttgart.de/api/access/datafile/382154",
+      "metadata_url": "https://darus.uni-stuttgart.de/api/datasets/:persistentId/?persistentId=doi:10.18419/DARUS-5047"
+    },
+    {
+      "filename": "motion_blur.zip",
+      "condition": "motion_blur",
+      "datafile_id": 382156,
+      "bytes": 4980199694,
+      "checksum": {
+        "type": "MD5",
+        "value": "bbe7209567c5fe9b309232ca2ac0d357"
+      },
+      "url": "https://darus.uni-stuttgart.de/api/access/datafile/382156",
+      "metadata_url": "https://darus.uni-stuttgart.de/api/datasets/:persistentId/?persistentId=doi:10.18419/DARUS-5047"
+    },
+    {
+      "filename": "pixelate.zip",
+      "condition": "pixelate",
+      "datafile_id": 382164,
+      "bytes": 321132607,
+      "checksum": {
+        "type": "MD5",
+        "value": "309c6ca5f5266f690ae8f95b1cb1b9a8"
+      },
+      "url": "https://darus.uni-stuttgart.de/api/access/datafile/382164",
+      "metadata_url": "https://darus.uni-stuttgart.de/api/datasets/:persistentId/?persistentId=doi:10.18419/DARUS-5047"
+    },
+    {
+      "filename": "rain.zip",
+      "condition": "rain",
+      "datafile_id": 382160,
+      "bytes": 6923981274,
+      "checksum": {
+        "type": "MD5",
+        "value": "e8bd5420a5f015fd462677d3913fd070"
+      },
+      "url": "https://darus.uni-stuttgart.de/api/access/datafile/382160",
+      "metadata_url": "https://darus.uni-stuttgart.de/api/datasets/:persistentId/?persistentId=doi:10.18419/DARUS-5047"
+    },
+    {
+      "filename": "saturate.zip",
+      "condition": "saturate",
+      "datafile_id": 382155,
+      "bytes": 5849553852,
+      "checksum": {
+        "type": "MD5",
+        "value": "aa9b1a1140baaf993e526e8f75074ebc"
+      },
+      "url": "https://darus.uni-stuttgart.de/api/access/datafile/382155",
+      "metadata_url": "https://darus.uni-stuttgart.de/api/datasets/:persistentId/?persistentId=doi:10.18419/DARUS-5047"
+    },
+    {
+      "filename": "shot_noise.zip",
+      "condition": "shot_noise",
+      "datafile_id": 382170,
+      "bytes": 6981958996,
+      "checksum": {
+        "type": "MD5",
+        "value": "919eaeebc44df4da3de401a2fc6057c4"
+      },
+      "url": "https://darus.uni-stuttgart.de/api/access/datafile/382170",
+      "metadata_url": "https://darus.uni-stuttgart.de/api/datasets/:persistentId/?persistentId=doi:10.18419/DARUS-5047"
+    },
+    {
+      "filename": "snow.zip",
+      "condition": "snow",
+      "datafile_id": 382162,
+      "bytes": 6987339923,
+      "checksum": {
+        "type": "MD5",
+        "value": "509b58efe3bb9901b66ac88255a11cd8"
+      },
+      "url": "https://darus.uni-stuttgart.de/api/access/datafile/382162",
+      "metadata_url": "https://darus.uni-stuttgart.de/api/datasets/:persistentId/?persistentId=doi:10.18419/DARUS-5047"
+    },
+    {
+      "filename": "spatter.zip",
+      "condition": "spatter",
+      "datafile_id": 382163,
+      "bytes": 7017025393,
+      "checksum": {
+        "type": "MD5",
+        "value": "c3dcba3a4a77a6e7e4106e1e87e4a4a6"
+      },
+      "url": "https://darus.uni-stuttgart.de/api/access/datafile/382163",
+      "metadata_url": "https://darus.uni-stuttgart.de/api/datasets/:persistentId/?persistentId=doi:10.18419/DARUS-5047"
+    },
+    {
+      "filename": "speckle_noise.zip",
+      "condition": "speckle_noise",
+      "datafile_id": 382171,
+      "bytes": 11631176553,
+      "checksum": {
+        "type": "MD5",
+        "value": "7d27539fb4031bff4fab589c65961833"
+      },
+      "url": "https://darus.uni-stuttgart.de/api/access/datafile/382171",
+      "metadata_url": "https://darus.uni-stuttgart.de/api/datasets/:persistentId/?persistentId=doi:10.18419/DARUS-5047"
+    },
+    {
+      "filename": "zoom_blur.zip",
+      "condition": "zoom_blur",
+      "datafile_id": 382159,
+      "bytes": 3726790275,
+      "checksum": {
+        "type": "MD5",
+        "value": "5cb3922ca0c83a165d777d924687e27c"
+      },
+      "url": "https://darus.uni-stuttgart.de/api/access/datafile/382159",
+      "metadata_url": "https://darus.uni-stuttgart.de/api/datasets/:persistentId/?persistentId=doi:10.18419/DARUS-5047"
+    }
+  ],
+  "total_archive_bytes": 115452051822,
+  "test_stereo_pairs": 1000,
+  "conditions": [
+    "clean",
+    "brightness",
+    "contrast",
+    "defocus_blur",
+    "elastic_transform",
+    "fog",
+    "frost",
+    "gaussian_blur",
+    "gaussian_noise",
+    "glass_blur",
+    "impulse_noise",
+    "jpeg_compression",
+    "motion_blur",
+    "pixelate",
+    "rain",
+    "saturate",
+    "shot_noise",
+    "snow",
+    "spatter",
+    "speckle_noise",
+    "zoom_blur"
+  ],
+  "sequence_counts": {
+    "0003": 131,
+    "0019": 111,
+    "0028": 39,
+    "0029": 135,
+    "0031": 73,
+    "0034": 47,
+    "0035": 120,
+    "0040": 111,
+    "0042": 116,
+    "0046": 117
+  },
+  "GT_requested": false,
+  "download_workers": 1,
+  "rate_limit_MiB_s": 20
+}

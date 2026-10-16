@@ -1,0 +1,98 @@
+{
+  "artifact_type": "manual_primary_signal_freeze_v1",
+  "manually_confirmed": true,
+  "approved_by": "user",
+  "source_split": "dev",
+  "manifest_sha256": "245b55144b50365e9a8de4acc4c1af5200bd301f1db2c55a82be8a1deaa91d6b",
+  "primary_signal_selection_conditions": [
+    "brightness",
+    "contrast",
+    "saturation",
+    "gaussian_noise",
+    "shot_noise",
+    "speckle_noise"
+  ],
+  "selection_rule": {
+    "split": "dev",
+    "conditions": "six corruptions only",
+    "primary": "macro AUROC",
+    "auroc_practical_tie": 0.005,
+    "secondary": "maximum macro AP among AUROC practical ties",
+    "aupr_practical_tie": 0.0,
+    "ap_numerical_tie_atol": 1e-12,
+    "ap_numerical_tie_rtol": 0.0,
+    "tertiary": "worst-corruption AUROC only for numerical AP ties; no practical AP tie band",
+    "baseline_eligible": false,
+    "manual_freeze_required": true
+  },
+  "models": {
+    "raft": {
+      "primary_signal": "late_std",
+      "signal_parameters": {
+        "last_n": 4
+      },
+      "evidence": {
+        "20000": {
+          "macro_AUROC": 0.9025513687761938,
+          "macro_AP": 0.6988452071388979,
+          "dev_evidence_sha256": "87296aeddd78de2f281737c524763e3c83c971b3ebdb64d23d47c6567774ca99",
+          "recommended": "late_std",
+          "auroc_tie_candidates": [
+            "late_std"
+          ]
+        },
+        "40000": {
+          "macro_AUROC": 0.9026051478653047,
+          "macro_AP": 0.6991151306722747,
+          "dev_evidence_sha256": "b3829a5f11eeb05e92df8fee7b79517430410c86e3495a757dfe722e01f84eb0",
+          "recommended": "late_std",
+          "auroc_tie_candidates": [
+            "late_std"
+          ]
+        }
+      }
+    },
+    "acv": {
+      "primary_signal": "attention_entropy",
+      "signal_parameters": {},
+      "evidence": {
+        "20000": {
+          "macro_AUROC": 0.9125679016931988,
+          "macro_AP": 0.8223481245581987,
+          "dev_evidence_sha256": "0ab9e8dfb271e15fa0c959df6017b09131749456980783a650ed78b1a4e0f8d5",
+          "recommended": "attention_entropy",
+          "auroc_tie_candidates": [
+            "attention_entropy"
+          ]
+        },
+        "40000": {
+          "macro_AUROC": 0.9126424850760301,
+          "macro_AP": 0.8224864652556803,
+          "dev_evidence_sha256": "83718ebe5bcc54f54477ea5248db6d293e6fbd313a10f4467cfb2f45a3c1b970",
+          "recommended": "attention_entropy",
+          "auroc_tie_candidates": [
+            "attention_entropy"
+          ]
+        }
+      }
+    }
+  },
+  "evidence_files": {
+    "20000": {
+      "table2_path": "results/sensor_v4_phase_a_500_20260925/dev_report_20k/table2.json",
+      "table2_file_sha256": "f25b38dd5349961b903a81b5c2121b1c5a79d0d4795b5d3570994716b9b70788",
+      "recommendations_path": "results/sensor_v4_phase_a_500_20260925/dev_report_20k/signal_recommendations.json",
+      "recommendations_file_sha256": "8d729228c1153886dce3a3e0caf97ed4ab2d559a1400d8eb1b7cd5dfaebced1c"
+    },
+    "40000": {
+      "table2_path": "results/sensor_v4_phase_a_500_20260925_dev40k/table2.json",
+      "table2_file_sha256": "0ee028925d0135cadc3a75ea7766bb30a8a314512519f7db9a6bab10eb17de87",
+      "recommendations_path": "results/sensor_v4_phase_a_500_20260925_dev40k/signal_recommendations.json",
+      "recommendations_file_sha256": "12d6cfa7da503af30f804312a57a27ba9767f84621c90de141c5c0f479a3bff8"
+    }
+  },
+  "phase_a_run_id": "sensor_v4_phase_a_500_20260925",
+  "scope": "dev bank sanity and Table 3 preparation only; bank / Fixed-best / held-out GO remain separate",
+  "heldout_or_broader_used": false,
+  "authorization": "User explicitly approved RAFT late_std and ACV attention_entropy after reviewing Phase A dev 20k/40k results."
+}

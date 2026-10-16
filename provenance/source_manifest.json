@@ -1,0 +1,666 @@
+[
+  {
+    "destination": "kernels/paper/scripts/sensor_v4_common.py",
+    "source": "scripts/sensor_v4_common.py",
+    "source_sha256": "45daa14fc688477968f5212f9351fbacfeb7c770b12bd2776441f8ef2f867d90",
+    "mode": "storage() guard made profile-relative; numerical functions unchanged",
+    "packaged_sha256": "2168dd7daf4f855db33ae404712fe78a80e2a5a06071688d283a8aff4d7efe74"
+  },
+  {
+    "destination": "kernels/paper/scripts/sensor_v4_metrics.py",
+    "source": "scripts/sensor_v4_metrics.py",
+    "source_sha256": "2caee436164257a5ff232aec511592bd466e9fef344c9ebfe2489d6c188ff322",
+    "mode": "unchanged",
+    "packaged_sha256": "2caee436164257a5ff232aec511592bd466e9fef344c9ebfe2489d6c188ff322"
+  },
+  {
+    "destination": "kernels/paper/scripts/sensor_v4_rank_selection.py",
+    "source": "scripts/sensor_v4_rank_selection.py",
+    "source_sha256": "c2c80ea375bba5794915cdc7ffc596eab1f5fd1a2a52a2523d02797646248d51",
+    "mode": "unchanged",
+    "packaged_sha256": "c2c80ea375bba5794915cdc7ffc596eab1f5fd1a2a52a2523d02797646248d51"
+  },
+  {
+    "destination": "kernels/paper/scripts/sensor_v4_signals.py",
+    "source": "scripts/sensor_v4_signals.py",
+    "source_sha256": "88e67b1ccf9b086ea04b65003ad216fcc666d6720cafd18a666f19c261479fd8",
+    "mode": "unchanged",
+    "packaged_sha256": "88e67b1ccf9b086ea04b65003ad216fcc666d6720cafd18a666f19c261479fd8"
+  },
+  {
+    "destination": "kernels/paper/scripts/sensor_v4_images.py",
+    "source": "scripts/sensor_v4_images.py",
+    "source_sha256": "b227bd0fdcfab9435956a5e7b4df26508d33d0346a2f7ae8b516c7e8992306d5",
+    "mode": "unchanged",
+    "packaged_sha256": "b227bd0fdcfab9435956a5e7b4df26508d33d0346a2f7ae8b516c7e8992306d5"
+  },
+  {
+    "destination": "kernels/paper/scripts/corruptions_robustspring_v2.py",
+    "source": "scripts/corruptions_robustspring_v2.py",
+    "source_sha256": "942386f83aa42c21b02a6b8ff85397f73f2c43007cf7f36bf24f72cd6fb4a6a6",
+    "mode": "unchanged",
+    "packaged_sha256": "942386f83aa42c21b02a6b8ff85397f73f2c43007cf7f36bf24f72cd6fb4a6a6"
+  },
+  {
+    "destination": "kernels/paper/scripts/table2_pool_v4.py",
+    "source": "scripts/table2_pool_v4.py",
+    "source_sha256": "f0d15766939432d2bb19ce09271c6239b701570d69a51c4dc4cb5e2681ac3e43",
+    "mode": "unchanged",
+    "packaged_sha256": "f0d15766939432d2bb19ce09271c6239b701570d69a51c4dc4cb5e2681ac3e43"
+  },
+  {
+    "destination": "kernels/paper/scripts/raft_adapter.py",
+    "source": "scripts/raft_adapter.py",
+    "source_sha256": "8a9440fc420432643ffbb0f73cb12e713052d9633afa0a74295b36099c3dfb68",
+    "mode": "unchanged",
+    "packaged_sha256": "8a9440fc420432643ffbb0f73cb12e713052d9633afa0a74295b36099c3dfb68"
+  },
+  {
+    "destination": "kernels/paper/scripts/acv_adapter.py",
+    "source": "scripts/acv_adapter.py",
+    "source_sha256": "702e10aa86d32bf3871ff8e54864e1aed4e96b242da9b8742eddf201092a6699",
+    "mode": "unchanged",
+    "packaged_sha256": "702e10aa86d32bf3871ff8e54864e1aed4e96b242da9b8742eddf201092a6699"
+  },
+  {
+    "destination": "kernels/paper/scripts/generic_transform_v1.py",
+    "symbol": "transform",
+    "source": "scripts/generic_transform_v1.py",
+    "source_sha256": "f9b98f61a36a6c0c95b28bd1dd16f1b2fff2247bc619fe1cb72a280efd59087d",
+    "symbol_sha256": "05e5e33e0c11c07300d9db103accbb33715caf886b22c033e20337ebf44baf18",
+    "mode": "unchanged_symbol; reduced imports and removed unused orchestration",
+    "packaged_sha256": "655dc1ab112cd31506c70e85f28825de1fb6d8e8effbbaf2b07227930bc6f407"
+  },
+  {
+    "destination": "kernels/paper/scripts/candidate_adequacy_v4.py",
+    "symbol": "geometry_pool",
+    "source": "scripts/candidate_adequacy_v4.py",
+    "source_sha256": "aefcdf48e8a7d5749d465825b5198ba372c1d195ef6c1dfe343bf1a168f8e043",
+    "symbol_sha256": "f37aa111e0bd55ef28427bbe38ecda6ab2774019186fa8346c435a6225237ebd",
+    "mode": "unchanged_symbol; reduced imports and removed unused orchestration",
+    "packaged_sha256": "36459718b57020b90f163f546c87efce39d3bc92f0ebcde195ba4089c1d5dd3f"
+  },
+  {
+    "destination": "kernels/paper/scripts/candidate_adequacy_v4.py",
+    "symbol": "rank_scores_from_counts",
+    "source": "scripts/candidate_adequacy_v4.py",
+    "source_sha256": "aefcdf48e8a7d5749d465825b5198ba372c1d195ef6c1dfe343bf1a168f8e043",
+    "symbol_sha256": "9e97c3adbcb944a8c87bbaaf07449af31541b2c63228387354d1d0fc2d26f56f",
+    "mode": "unchanged_symbol; reduced imports and removed unused orchestration",
+    "packaged_sha256": "36459718b57020b90f163f546c87efce39d3bc92f0ebcde195ba4089c1d5dd3f"
+  },
+  {
+    "destination": "kernels/paper/scripts/broad_sweep_v4.py",
+    "symbol": "compile_counts",
+    "source": "scripts/broad_sweep_v4.py",
+    "source_sha256": "b7b27e41bbd2776f4822746603666df311c21d286d0617f7b70ecb30fabac74b",
+    "symbol_sha256": "ce679ba90392c4e2785a11cfd0f37205943126b7fcd31e654674317cb96dd13c",
+    "mode": "unchanged_symbol; reduced imports and removed unused orchestration",
+    "packaged_sha256": "74c511083f52da2b16e082ff70f8b3a998ddcb0204d5c256742064024913e0a1"
+  },
+  {
+    "destination": "kernels/paper/scripts/broad_sweep_v4.py",
+    "symbol": "exact_counts",
+    "source": "scripts/broad_sweep_v4.py",
+    "source_sha256": "b7b27e41bbd2776f4822746603666df311c21d286d0617f7b70ecb30fabac74b",
+    "symbol_sha256": "7aa0bf0cccb41897b4b9ca56d1285a8e6a1ecfae929681f72665337c518e7927",
+    "mode": "unchanged_symbol; reduced imports and removed unused orchestration",
+    "packaged_sha256": "74c511083f52da2b16e082ff70f8b3a998ddcb0204d5c256742064024913e0a1"
+  },
+  {
+    "destination": "kernels/paper/scripts/broad_sweep_v4.py",
+    "symbol": "select_scores",
+    "source": "scripts/broad_sweep_v4.py",
+    "source_sha256": "b7b27e41bbd2776f4822746603666df311c21d286d0617f7b70ecb30fabac74b",
+    "symbol_sha256": "e3b1f8b9df7e62141dbcaa082f318e317a542e852bc1c33db28babce76024b45",
+    "mode": "unchanged_symbol; reduced imports and removed unused orchestration",
+    "packaged_sha256": "74c511083f52da2b16e082ff70f8b3a998ddcb0204d5c256742064024913e0a1"
+  },
+  {
+    "destination": "kernels/paper/scripts/native/risk_pair_counts.cpp",
+    "source": "scripts/native/risk_pair_counts.cpp",
+    "source_sha256": "ea66054b6a77a4464f81fe87639f1203f825dc83aef79d076e35d997a1ae0960",
+    "mode": "unchanged",
+    "packaged_sha256": "ea66054b6a77a4464f81fe87639f1203f825dc83aef79d076e35d997a1ae0960"
+  },
+  {
+    "destination": "kernels/paper/scripts/generic_heldout_v1.py",
+    "symbol": "pixel_oracle_heldout",
+    "source": "scripts/generic_heldout_v1.py",
+    "source_sha256": "c8e4a7fbbaf3f5a72244630f92d40d71f08f557a4ff2ed8732d370face7ac78b",
+    "symbol_sha256": "c3cab6d64fd863c422cda7f5092008f886a6cd357cdfb99b97a01fcb80040065",
+    "mode": "unchanged_symbol; reduced imports and removed unused orchestration",
+    "packaged_sha256": "ddb512c7afd1f08adda9f2c0a2dbeaf33e67df699383f9561e4cd8aee0df08c9"
+  },
+  {
+    "destination": "kernels/paper/scripts/generic_heldout_v1.py",
+    "symbol": "evaluate",
+    "source": "scripts/generic_heldout_v1.py",
+    "source_sha256": "c8e4a7fbbaf3f5a72244630f92d40d71f08f557a4ff2ed8732d370face7ac78b",
+    "symbol_sha256": "2b63aec18f04c0c100c94febd019457c7a055f3aa505fd933b0a6b1ff1c1e1bd",
+    "mode": "unchanged_symbol; reduced imports and removed unused orchestration",
+    "packaged_sha256": "ddb512c7afd1f08adda9f2c0a2dbeaf33e67df699383f9561e4cd8aee0df08c9"
+  },
+  {
+    "destination": "kernels/paper/scripts/run_sensor_v4.py",
+    "symbol": "prepare",
+    "source": "scripts/run_sensor_v4.py",
+    "source_sha256": "1273918c05cff3892ab75519fede20cb1ee71f7702fc232e9b2ecbc700c98b86",
+    "symbol_sha256": "8530b14bedd869cfe7140f1198b6dff86fde73ea07d8c783bafae91ad5a71a7f",
+    "mode": "unchanged_symbol; reduced imports and removed unused orchestration",
+    "packaged_sha256": "01a92926266430cd0e174467052188096fc02e0c04e923eb211ef32746ee275c"
+  },
+  {
+    "destination": "kernels/paper/scripts/run_sensor_v4.py",
+    "symbol": "evaluate",
+    "source": "scripts/run_sensor_v4.py",
+    "source_sha256": "1273918c05cff3892ab75519fede20cb1ee71f7702fc232e9b2ecbc700c98b86",
+    "symbol_sha256": "b6d585888752457c1a29bfa181e88d0e89c4b8fd19a497c4354338b7c07a6d4f",
+    "mode": "unchanged_symbol; reduced imports and removed unused orchestration",
+    "packaged_sha256": "01a92926266430cd0e174467052188096fc02e0c04e923eb211ef32746ee275c"
+  },
+  {
+    "destination": "kernels/paper/scripts/run_sensor_v4.py",
+    "symbol": "model_worker",
+    "source": "scripts/run_sensor_v4.py",
+    "source_sha256": "1273918c05cff3892ab75519fede20cb1ee71f7702fc232e9b2ecbc700c98b86",
+    "symbol_sha256": "e759d6957ebd1e07d9d1527d9b8e86e8df6a86f5fe2b2ab722969c617c247535",
+    "mode": "unchanged_symbol; reduced imports and removed unused orchestration",
+    "packaged_sha256": "01a92926266430cd0e174467052188096fc02e0c04e923eb211ef32746ee275c"
+  },
+  {
+    "destination": "kernels/paper/scripts/download_subset.py",
+    "symbol": "RangeReader",
+    "source": "scripts/download_subset.py",
+    "source_sha256": "e4a59bb36a1bdcba1c535545c7b2b613d3078f146eb505923bef315ce618d7b8",
+    "symbol_sha256": "b1ebfd6c60c9f35e6a18a8062f9675976f99e8bcc19e17ddd9a933df33f5b88d",
+    "mode": "unchanged_symbol; reduced imports and removed unused orchestration",
+    "packaged_sha256": "c503d035dfafde638625e1194d6293ff9a585829299311b73e92f10ad6657939"
+  },
+  {
+    "destination": "kernels/paper/scripts/report_generic_heldout_correction_v2.py",
+    "source": "scripts/report_generic_heldout_correction_v2.py",
+    "source_sha256": "7972de9c3ee76df558ed98c31d7d626914d16bc000467cdcf51df75f9a53d001",
+    "mode": "extracted numerical functions; removed legacy orchestration",
+    "packaged_sha256": "cded6ef440ae6345bb63b516f5c9fbab02fb054127876f4f60ec72cfd08b4dd3"
+  },
+  {
+    "destination": "kernels/paper/scripts/three_seed_metrics.py",
+    "symbol": "tables",
+    "source": "scripts/build_three_seed_manuscript_v22.py",
+    "source_sha256": "9b668412e9179db9c4b2b18bffa2514d1141efddbf9de0241ba95e370ce1698f",
+    "symbol_sha256": "e9efceea8cb12659c9adad3635884eb57eb7e7c7e65ef2812e418bae53df0b07",
+    "mode": "unchanged_symbol; reduced imports and removed unused orchestration",
+    "packaged_sha256": "8ef7ce8fd146aeea0949cf8dd1ce6a4e09f6b24ff0caba06822ddbfceb6acd37"
+  },
+  {
+    "destination": "kernels/challenge/screening/adapter_croco.py",
+    "source": "screening/adapter_croco.py",
+    "source_sha256": "a283f0e776874699376a19932175e1a24ef70bf0367853ff22b74ff73520844c",
+    "mode": "unchanged",
+    "packaged_sha256": "a283f0e776874699376a19932175e1a24ef70bf0367853ff22b74ff73520844c"
+  },
+  {
+    "destination": "kernels/challenge/screening/adapter_foundation.py",
+    "source": "screening/adapter_foundation.py",
+    "source_sha256": "2d85d6d794d5cea16850936e546ddf6ffb15d38cb8641b8e86f7331b70149d8e",
+    "mode": "loading/import-only changes; frozen numerical logic retained",
+    "packaged_sha256": "53dfdaf8454332758a31fa09c7314558dfda7cbd1e491d15a013b16963bf5a2f"
+  },
+  {
+    "destination": "kernels/challenge/screening/candidate_adapters.py",
+    "source": "screening/candidate_adapters.py",
+    "source_sha256": "1888e6f6440fa715b2ea0f49ddfa1c47aee9b7ce0d077e22680340ca7f1b232d",
+    "mode": "unchanged",
+    "packaged_sha256": "1888e6f6440fa715b2ea0f49ddfa1c47aee9b7ce0d077e22680340ca7f1b232d"
+  },
+  {
+    "destination": "kernels/challenge/screening/batch_adapter.py",
+    "source": "screening/batch_adapter.py",
+    "source_sha256": "c57844bc76b97d39dadc290373fecec98a9fb82feb7492c26f90ac9bca0a8a9f",
+    "mode": "unchanged",
+    "packaged_sha256": "c57844bc76b97d39dadc290373fecec98a9fb82feb7492c26f90ac9bca0a8a9f"
+  },
+  {
+    "destination": "kernels/challenge/screening/croco_proxy_extract.py",
+    "source": "screening/croco_proxy_extract.py",
+    "source_sha256": "0e3ea319c805d57d39a8f5edd936300e8b69be54f4a21719533c17d82f84799c",
+    "mode": "unchanged",
+    "packaged_sha256": "0e3ea319c805d57d39a8f5edd936300e8b69be54f4a21719533c17d82f84799c"
+  },
+  {
+    "destination": "kernels/challenge/screening/croco_proxy_extended_extract.py",
+    "source": "screening/croco_proxy_extended_extract.py",
+    "source_sha256": "bc7cf2cc45b8fc634ab00cd660d49b538a5664bd32dd8d5822663ac443e28f8d",
+    "mode": "unchanged",
+    "packaged_sha256": "bc7cf2cc45b8fc634ab00cd660d49b538a5664bd32dd8d5822663ac443e28f8d"
+  },
+  {
+    "destination": "kernels/challenge/screening/official_foundation_io.py",
+    "source": "screening/official_foundation_io.py",
+    "source_sha256": "b294fb0aa458fa46cd92f152017f093e3d9de8bd37c7d8e5a3dd6c69af760f2a",
+    "mode": "unchanged",
+    "packaged_sha256": "b294fb0aa458fa46cd92f152017f093e3d9de8bd37c7d8e5a3dd6c69af760f2a"
+  },
+  {
+    "destination": "kernels/challenge/screening/official_foundation_delta_metrics.py",
+    "source": "screening/official_foundation_delta_metrics.py",
+    "source_sha256": "009782b23bf80d9f278af0e9fa8736b5a150932b8426a8922d1284fc4a86a1d8",
+    "mode": "unchanged",
+    "packaged_sha256": "009782b23bf80d9f278af0e9fa8736b5a150932b8426a8922d1284fc4a86a1d8"
+  },
+  {
+    "source": "screening/croco_fp16_proxy.py",
+    "destination": "kernels/challenge/screening/croco_fp16_proxy.py",
+    "source_sha256": "1bb9fca4b26de74db7ca1ab234f1beb848bdf26a27c1f9587a7cff5b05e43196",
+    "mode": "removed operational smoke publisher; precision wrapper unchanged",
+    "packaged_sha256": "5e4b9902457bedac207f64001d0411bbfde2a35cc932c94703a38a0c2d11ac28"
+  },
+  {
+    "destination": "kernels/challenge/screening/croco_proxy_metrics.py",
+    "symbol": "stable_rng",
+    "source": "screening/croco_proxy_metrics.py",
+    "source_sha256": "248d150d587b073e5f656d81ec92a3177571afcb6cad18935f916463800b4f19",
+    "symbol_sha256": "e74ed2fcfe4069b6b280dc680633d1d285a759ff394ad52de8d4439b33a34085",
+    "mode": "unchanged_symbol; reduced imports and removed unused orchestration",
+    "packaged_sha256": "3597de6d2de38f39d4d73fcc253ce79b7b283e28d85f5a7c1d3468d97d1d15f0"
+  },
+  {
+    "destination": "kernels/challenge/screening/croco_proxy_metrics.py",
+    "symbol": "census",
+    "source": "screening/croco_proxy_metrics.py",
+    "source_sha256": "248d150d587b073e5f656d81ec92a3177571afcb6cad18935f916463800b4f19",
+    "symbol_sha256": "d830b680f905779d689b59c998f69a3a8d9403d5eaed6a1acce5cbb8c2127e77",
+    "mode": "unchanged_symbol; reduced imports and removed unused orchestration",
+    "packaged_sha256": "3597de6d2de38f39d4d73fcc253ce79b7b283e28d85f5a7c1d3468d97d1d15f0"
+  },
+  {
+    "destination": "kernels/challenge/screening/croco_proxy_metrics.py",
+    "symbol": "geometry_baselines",
+    "source": "screening/croco_proxy_metrics.py",
+    "source_sha256": "248d150d587b073e5f656d81ec92a3177571afcb6cad18935f916463800b4f19",
+    "symbol_sha256": "874dcdd9a48c7f44aa62d1aea8d19f31d719687b71b4c647ba8685653c9ce733",
+    "mode": "unchanged_symbol; reduced imports and removed unused orchestration",
+    "packaged_sha256": "3597de6d2de38f39d4d73fcc253ce79b7b283e28d85f5a7c1d3468d97d1d15f0"
+  },
+  {
+    "destination": "kernels/challenge/screening/croco_proxy_metrics.py",
+    "symbol": "rank_select",
+    "source": "screening/croco_proxy_metrics.py",
+    "source_sha256": "248d150d587b073e5f656d81ec92a3177571afcb6cad18935f916463800b4f19",
+    "symbol_sha256": "9d6654f7c14e368b7f77da3138f6adea14c116fe62654d4f3a4b1093b083cd7d",
+    "mode": "unchanged_symbol; reduced imports and removed unused orchestration",
+    "packaged_sha256": "3597de6d2de38f39d4d73fcc253ce79b7b283e28d85f5a7c1d3468d97d1d15f0"
+  },
+  {
+    "destination": "kernels/challenge/screening/croco_proxy_metrics.py",
+    "symbol": "rank_metrics",
+    "source": "screening/croco_proxy_metrics.py",
+    "source_sha256": "248d150d587b073e5f656d81ec92a3177571afcb6cad18935f916463800b4f19",
+    "symbol_sha256": "7eefa2bc080bb5962abb9db23eb33a1f6727f426929ab84ddba9eec2a17c4138",
+    "mode": "same numerical body; sklearn import moved inside function to avoid an unused production dependency",
+    "packaged_sha256": "3597de6d2de38f39d4d73fcc253ce79b7b283e28d85f5a7c1d3468d97d1d15f0"
+  },
+  {
+    "destination": "kernels/challenge/screening/croco_proxy_metrics.py",
+    "symbol": "candidate_ordering",
+    "source": "screening/croco_proxy_metrics.py",
+    "source_sha256": "248d150d587b073e5f656d81ec92a3177571afcb6cad18935f916463800b4f19",
+    "symbol_sha256": "d1af3009394df9f47b1cb8c3f7f0ac85a16c76c064fc7df8e4e5b7c10804e73e",
+    "mode": "unchanged_symbol; reduced imports and removed unused orchestration",
+    "packaged_sha256": "3597de6d2de38f39d4d73fcc253ce79b7b283e28d85f5a7c1d3468d97d1d15f0"
+  },
+  {
+    "destination": "kernels/challenge/screening/croco_candidate_pruning.py",
+    "symbol": "ensemble_risk",
+    "source": "screening/croco_candidate_pruning.py",
+    "source_sha256": "d39c736414fb3ee86aef6800c30749284f07c4e54e8a89f4165d3969de2effa9",
+    "symbol_sha256": "fc4fb84bba29977d8adeb4d5c12cc0b6709c71a0c25c39a5b659f43c48de4ec8",
+    "mode": "unchanged_symbol; reduced imports and removed unused orchestration",
+    "packaged_sha256": "773b55d4ba21f18f1fbcb79e518ffd98b98d1c8f13c78848d7d9498a6fe8b815"
+  },
+  {
+    "source": "screening/croco_tier8_evaluation.py",
+    "destination": "kernels/challenge/screening/croco_tier8_evaluation.py",
+    "source_sha256": "9a4fa5d1fc3bbefe23870318e4bcc16faec59ab93804d1007e38cbe9dbeaf11e",
+    "mode": "constants and select_arrays unchanged; delivery orchestration removed",
+    "packaged_sha256": "ac2586488d82a5f202e7d0b6989ea441987c02c6d269c22a402bad0a1de36285"
+  },
+  {
+    "destination": "kernels/challenge/screening/croco_native.py",
+    "symbol": "assemble_native",
+    "source": "screening/croco_official_progressive.py",
+    "source_sha256": "fb83472d4432444607bd0699fcb59f169dce38a28c50504a86dc9c461e58f0d0",
+    "symbol_sha256": "35112d3c0aaa609c9c1e1e602666d0792d2ed247f5d1b13e110cfbd08c1cdadd",
+    "mode": "unchanged_symbol; reduced imports and removed unused orchestration",
+    "packaged_sha256": "089c9f3e6a81ee6d6d554d3c052f66aa99d04d5022ca37d9df95b3e26b1f4d4e"
+  },
+  {
+    "destination": "kernels/challenge/screening/croco_native.py",
+    "symbol": "verify_cache",
+    "source": "screening/croco_official_progressive.py",
+    "source_sha256": "fb83472d4432444607bd0699fcb59f169dce38a28c50504a86dc9c461e58f0d0",
+    "symbol_sha256": "ad7037edd1221759a035a437e8f8cc3fe6f066f9756ff872b406d11680f99489",
+    "mode": "unchanged_symbol; reduced imports and removed unused orchestration",
+    "packaged_sha256": "089c9f3e6a81ee6d6d554d3c052f66aa99d04d5022ca37d9df95b3e26b1f4d4e"
+  },
+  {
+    "destination": "kernels/challenge/screening/croco_native.py",
+    "symbol": "save_cache",
+    "source": "screening/croco_official_progressive.py",
+    "source_sha256": "fb83472d4432444607bd0699fcb59f169dce38a28c50504a86dc9c461e58f0d0",
+    "symbol_sha256": "79c3a8fb744c085869cdb4d150e112f9934de4abfc8a086d3690b662ea8fc7e6",
+    "mode": "unchanged_symbol; reduced imports and removed unused orchestration",
+    "packaged_sha256": "089c9f3e6a81ee6d6d554d3c052f66aa99d04d5022ca37d9df95b3e26b1f4d4e"
+  },
+  {
+    "destination": "kernels/challenge/screening/croco_native.py",
+    "symbol": "pack_reference_inputs",
+    "source": "screening/croco_official_progressive.py",
+    "source_sha256": "fb83472d4432444607bd0699fcb59f169dce38a28c50504a86dc9c461e58f0d0",
+    "symbol_sha256": "a8fc61ea0a96a2ce9e591095a980c8b7b1a0bf459678909d7af9032563f6b307",
+    "mode": "unchanged_symbol; reduced imports and removed unused orchestration",
+    "packaged_sha256": "089c9f3e6a81ee6d6d554d3c052f66aa99d04d5022ca37d9df95b3e26b1f4d4e"
+  },
+  {
+    "destination": "configs/paper/split500.json",
+    "source": "sensor_v4_500.json",
+    "source_sha256": "b473b8f4cf89e89ff1cc916186f06c3718d8b10d0b8138bfa06d94d21ccc5a0e",
+    "mode": "unchanged",
+    "packaged_sha256": "b473b8f4cf89e89ff1cc916186f06c3718d8b10d0b8138bfa06d94d21ccc5a0e"
+  },
+  {
+    "destination": "configs/paper/phase_a.json",
+    "source": "sensor_v4_phase_a_run_20260925.json",
+    "source_sha256": "2864cfa41f129efdeb29922a9eb8511e6e0c2c0dc998fc9e2242742aefdbe63e",
+    "mode": "unchanged",
+    "packaged_sha256": "2864cfa41f129efdeb29922a9eb8511e6e0c2c0dc998fc9e2242742aefdbe63e"
+  },
+  {
+    "destination": "configs/paper/adaptation.json",
+    "source": "config.json",
+    "source_sha256": "7ee8bce27621487bbcf878b05a81e5e68b87728c385b11d9ddc23835d38b0cee",
+    "mode": "unchanged",
+    "packaged_sha256": "7ee8bce27621487bbcf878b05a81e5e68b87728c385b11d9ddc23835d38b0cee"
+  },
+  {
+    "destination": "configs/paper/bank.json",
+    "source": "bank.json",
+    "source_sha256": "0529d1811a7da352d5caec99ef33e89806034250778690a773007f632234e809",
+    "mode": "unchanged",
+    "packaged_sha256": "0529d1811a7da352d5caec99ef33e89806034250778690a773007f632234e809"
+  },
+  {
+    "destination": "configs/paper/freeze.json",
+    "source": "freeze.json",
+    "source_sha256": "8a8aefb7ebc384f43767d2e67de069684c160c820d95598d969a9df9ad4d79fb",
+    "mode": "unchanged",
+    "packaged_sha256": "8a8aefb7ebc384f43767d2e67de069684c160c820d95598d969a9df9ad4d79fb"
+  },
+  {
+    "destination": "configs/paper/primary_signals.json",
+    "source": "primary_signals_v4_dev20k40k.json",
+    "source_sha256": "88f21a84859517c7bd5f51270a3c60401dfac87861921c066613f952e63c245c",
+    "mode": "unchanged",
+    "packaged_sha256": "88f21a84859517c7bd5f51270a3c60401dfac87861921c066613f952e63c245c"
+  },
+  {
+    "destination": "configs/paper/assignments/seed101.json",
+    "source": "assignment.json",
+    "source_sha256": "ab6b323ff11f11a63d20837f3d70723b3dcd255f310049542539e0228eafa975",
+    "mode": "unchanged",
+    "packaged_sha256": "ab6b323ff11f11a63d20837f3d70723b3dcd255f310049542539e0228eafa975"
+  },
+  {
+    "destination": "configs/paper/assignments/seed202.json",
+    "source": "assignment.json",
+    "source_sha256": "a59077ea480297dcf2d2fb69b1280e00e529d063fee99efb5da103d86f3eb1a2",
+    "mode": "unchanged",
+    "packaged_sha256": "a59077ea480297dcf2d2fb69b1280e00e529d063fee99efb5da103d86f3eb1a2"
+  },
+  {
+    "destination": "configs/paper/assignments/seed303.json",
+    "source": "assignment.json",
+    "source_sha256": "fe7dbaebf96815b01274311f000ca790ef0041b2e1ae17652fc25e9de057cf9b",
+    "mode": "unchanged",
+    "packaged_sha256": "fe7dbaebf96815b01274311f000ca790ef0041b2e1ae17652fc25e9de057cf9b"
+  },
+  {
+    "destination": "evidence/paper/reference_three_seed/per_seed_metrics.csv",
+    "source": "per_seed_metrics.csv",
+    "source_sha256": "ed4a72c367eefbabb194cca130775605a65beac6e112aeca417d694ab6307e28",
+    "mode": "unchanged",
+    "packaged_sha256": "ed4a72c367eefbabb194cca130775605a65beac6e112aeca417d694ab6307e28"
+  },
+  {
+    "destination": "evidence/paper/reference_three_seed/three_seed_D1.csv",
+    "source": "three_seed_D1.csv",
+    "source_sha256": "eda7af5e7b07844dcf28a5def8fb8a0b25569c45a5346b0ec83a593b529f3f8b",
+    "mode": "unchanged",
+    "packaged_sha256": "eda7af5e7b07844dcf28a5def8fb8a0b25569c45a5346b0ec83a593b529f3f8b"
+  },
+  {
+    "destination": "evidence/paper/reference_three_seed/PROVENANCE.json",
+    "source": "PROVENANCE.json",
+    "source_sha256": "0933e5b3ccc90eab86049c2fa095e4cfa97d5549bf58fa37be4af362a994a601",
+    "mode": "unchanged",
+    "packaged_sha256": "0933e5b3ccc90eab86049c2fa095e4cfa97d5549bf58fa37be4af362a994a601"
+  },
+  {
+    "destination": "evidence/paper/reference_three_seed/three_seed_D1.json",
+    "source": "three_seed_D1.json",
+    "source_sha256": "8a865201b4cad480464326ac163a63476e3ef0b728a8cf450bf3613a1e44563b",
+    "mode": "unchanged",
+    "packaged_sha256": "8a865201b4cad480464326ac163a63476e3ef0b728a8cf450bf3613a1e44563b"
+  },
+  {
+    "destination": "evidence/paper/reference_three_seed/three_seed_metrics.csv",
+    "source": "three_seed_metrics.csv",
+    "source_sha256": "d74333d77929ede1d19c2aa0b07ff6a383885d518f4db8526c6f38d28be1479d",
+    "mode": "unchanged",
+    "packaged_sha256": "d74333d77929ede1d19c2aa0b07ff6a383885d518f4db8526c6f38d28be1479d"
+  },
+  {
+    "destination": "evidence/paper/reference_three_seed/per_seed_D1.csv",
+    "source": "per_seed_D1.csv",
+    "source_sha256": "3fd11e4546d8e3a13ee2c0206e87e0679fb7bfb061c6c84583c7e39fdbd26b5d",
+    "mode": "unchanged",
+    "packaged_sha256": "3fd11e4546d8e3a13ee2c0206e87e0679fb7bfb061c6c84583c7e39fdbd26b5d"
+  },
+  {
+    "destination": "evidence/paper/reference_three_seed/three_seed_metrics.json",
+    "source": "three_seed_metrics.json",
+    "source_sha256": "9f8cdd241f5311eeac0bedb42407cc39947c2838a1bf82081ca8aad3e74ffcc1",
+    "mode": "unchanged",
+    "packaged_sha256": "9f8cdd241f5311eeac0bedb42407cc39947c2838a1bf82081ca8aad3e74ffcc1"
+  },
+  {
+    "destination": "evidence/paper/reference_three_seed/per_seed_D1.json",
+    "source": "per_seed_D1.json",
+    "source_sha256": "84ea6c041b7c681b00d6589eec8872c07a02af13a8b96c38d5683d712a9f456a",
+    "mode": "unchanged",
+    "packaged_sha256": "84ea6c041b7c681b00d6589eec8872c07a02af13a8b96c38d5683d712a9f456a"
+  },
+  {
+    "destination": "evidence/paper/reference_three_seed/per_seed_metrics.json",
+    "source": "per_seed_metrics.json",
+    "source_sha256": "d1816069a93b861345808285aecf6bd47b838468c35c190856d9e4ec1ec0e3b8",
+    "mode": "unchanged",
+    "packaged_sha256": "d1816069a93b861345808285aecf6bd47b838468c35c190856d9e4ec1ec0e3b8"
+  },
+  {
+    "destination": "evidence/paper/sensor_v4_table2_within_image_dev20k_20260925_r2/corruption_macro.csv",
+    "source": "corruption_macro.csv",
+    "source_sha256": "5cd34a4559b24d3b5b08b4bca68c270b4778ebb91b369aeef329263bb60f9040",
+    "mode": "unchanged",
+    "packaged_sha256": "5cd34a4559b24d3b5b08b4bca68c270b4778ebb91b369aeef329263bb60f9040"
+  },
+  {
+    "destination": "evidence/paper/sensor_v4_table2_within_image_dev20k_20260925_r2/pooled_vs_within_image.csv",
+    "source": "pooled_vs_within_image.csv",
+    "source_sha256": "6a96b5132e6f5dcae4de968dece25ad45b9642a0863f6b8d22d0f77c2d6f9614",
+    "mode": "unchanged",
+    "packaged_sha256": "6a96b5132e6f5dcae4de968dece25ad45b9642a0863f6b8d22d0f77c2d6f9614"
+  },
+  {
+    "destination": "evidence/paper/sensor_v4_table2_within_image_dev20k_20260925_r2/per_sequence_image_distributions.csv",
+    "source": "per_sequence_image_distributions.csv",
+    "source_sha256": "97ee55f346ca9dd123974a9a9d762e720ae57849bad7ea02860e3462d121c294",
+    "mode": "unchanged",
+    "packaged_sha256": "97ee55f346ca9dd123974a9a9d762e720ae57849bad7ea02860e3462d121c294"
+  },
+  {
+    "destination": "evidence/paper/sensor_v4_figure_c_layers_dev_20260926_r2/recoverable_baseline_summary.csv",
+    "source": "recoverable_baseline_summary.csv",
+    "source_sha256": "3e63c5e2281aedb58101d78b10035712cb590c0c1d640b781c55d4c93c80d764",
+    "mode": "unchanged",
+    "packaged_sha256": "3e63c5e2281aedb58101d78b10035712cb590c0c1d640b781c55d4c93c80d764"
+  },
+  {
+    "destination": "evidence/paper/sensor_v4_figure_c_layers_dev_20260926_r2/context_and_localization_by_condition.csv",
+    "source": "context_and_localization_by_condition.csv",
+    "source_sha256": "334726f1559820f50a5aac8e9a50183dc7b8626185151adc7db28fa0a98ce4b4",
+    "mode": "unchanged",
+    "packaged_sha256": "334726f1559820f50a5aac8e9a50183dc7b8626185151adc7db28fa0a98ce4b4"
+  },
+  {
+    "destination": "evidence/paper/sensor_v4_figure_c_layers_dev_20260926_r2/recoverable_baseline_per_image.csv",
+    "source": "recoverable_baseline_per_image.csv",
+    "source_sha256": "30337b738bb1dcc621f78442b75459cf42c81c8668352fda45ed52260889815b",
+    "mode": "unchanged",
+    "packaged_sha256": "30337b738bb1dcc621f78442b75459cf42c81c8668352fda45ed52260889815b"
+  },
+  {
+    "destination": "evidence/paper/sensor_v4_figure_c_layers_dev_20260926_r2/figure_c_proxy_layers_compact.csv",
+    "source": "figure_c_proxy_layers_compact.csv",
+    "source_sha256": "7fd1d0df593007302dc0078763bb2abe6576a7eeec065e00671b5d8790b1b631",
+    "mode": "unchanged",
+    "packaged_sha256": "7fd1d0df593007302dc0078763bb2abe6576a7eeec065e00671b5d8790b1b631"
+  },
+  {
+    "destination": "evidence/paper/sensor_v4_figure_c_layers_dev_20260926_r2/layer_proxy_rankings.csv",
+    "source": "layer_proxy_rankings.csv",
+    "source_sha256": "8b05daced6eaa8a94a388a5fab1612324904cadd0d1d38a94ee4ed40dff1a451",
+    "mode": "unchanged",
+    "packaged_sha256": "8b05daced6eaa8a94a388a5fab1612324904cadd0d1d38a94ee4ed40dff1a451"
+  },
+  {
+    "destination": "evidence/paper/sensor_v4_all_proxy_response_dev_20260926/acv_proxy_condition_response_wide.csv",
+    "source": "acv_proxy_condition_response_wide.csv",
+    "source_sha256": "569d7dcef87e5bac7c8bd21351120ffdbf9224b42ff159207b1dbd8a7450a637",
+    "mode": "unchanged",
+    "packaged_sha256": "569d7dcef87e5bac7c8bd21351120ffdbf9224b42ff159207b1dbd8a7450a637"
+  },
+  {
+    "destination": "evidence/paper/sensor_v4_all_proxy_response_dev_20260926/raft_proxy_condition_response_wide.csv",
+    "source": "raft_proxy_condition_response_wide.csv",
+    "source_sha256": "a337c83c0ed3386c9cd36700da3db17f7b0acf8b07bf1d6998eae45a3da56a84",
+    "mode": "unchanged",
+    "packaged_sha256": "a337c83c0ed3386c9cd36700da3db17f7b0acf8b07bf1d6998eae45a3da56a84"
+  },
+  {
+    "destination": "evidence/paper/sensor_v4_all_proxy_response_dev_20260926/condition_task_metrics.csv",
+    "source": "condition_task_metrics.csv",
+    "source_sha256": "6d52b639a00d782cb8e5b5fa9bacd92e1f30d25f5fa74e1a49323e535b56d3b4",
+    "mode": "unchanged",
+    "packaged_sha256": "6d52b639a00d782cb8e5b5fa9bacd92e1f30d25f5fa74e1a49323e535b56d3b4"
+  },
+  {
+    "destination": "evidence/paper/sensor_v4_all_proxy_response_dev_20260926/all_proxy_condition_response.csv",
+    "source": "all_proxy_condition_response.csv",
+    "source_sha256": "d4dd5e85caeccfc18ef5adb3b186127afd0d95446a9a53683f29055e769e7fe5",
+    "mode": "unchanged",
+    "packaged_sha256": "d4dd5e85caeccfc18ef5adb3b186127afd0d95446a9a53683f29055e769e7fe5"
+  },
+  {
+    "destination": "evidence/challenge/croco_tile_global_robust_B_20261003/SERVER_RESULT.json",
+    "source": "screening/results/croco_tile_global_robust_B_20261003/SERVER_RESULT.json",
+    "source_sha256": "257e95ba8f4066f5f9feeb7c9052aa5617eeace79dd04d893d172c2450dc8a13",
+    "mode": "unchanged",
+    "packaged_sha256": "257e95ba8f4066f5f9feeb7c9052aa5617eeace79dd04d893d172c2450dc8a13"
+  },
+  {
+    "destination": "evidence/challenge/croco_tile_global_robust_B_20261003/SERVER_CONDITION_RESULTS.csv",
+    "source": "screening/results/croco_tile_global_robust_B_20261003/SERVER_CONDITION_RESULTS.csv",
+    "source_sha256": "edc2fff7fe8d80386cf4a13ccec963ef3255c695c862f1e59fdaf70c89f1179b",
+    "mode": "unchanged",
+    "packaged_sha256": "edc2fff7fe8d80386cf4a13ccec963ef3255c695c862f1e59fdaf70c89f1179b"
+  },
+  {
+    "destination": "evidence/challenge/croco_private_robust_A_20261001/SERVER_RESULT.json",
+    "source": "screening/results/croco_private_robust_A_20261001/SERVER_RESULT.json",
+    "source_sha256": "9b63fb0017da03eef976d3d92a6a8e1e02f80fc059d211644ce9eb69404dce84",
+    "mode": "unchanged",
+    "packaged_sha256": "9b63fb0017da03eef976d3d92a6a8e1e02f80fc059d211644ce9eb69404dce84"
+  },
+  {
+    "destination": "evidence/challenge/croco_o07_pilot40_oracle_review_20261003/REVIEW.json",
+    "source": "screening/results/croco_o07_pilot40_oracle_review_20261003/REVIEW.json",
+    "source_sha256": "4bcd46b3ee62b6a0e6bc5f19559ceacc065eeb31994644c6dbe7407420eab054",
+    "mode": "unchanged",
+    "packaged_sha256": "4bcd46b3ee62b6a0e6bc5f19559ceacc065eeb31994644c6dbe7407420eab054"
+  },
+  {
+    "destination": "evidence/challenge/croco_o07_pilot40_oracle_review_20261003/METHOD_COMPARISON.csv",
+    "source": "screening/results/croco_o07_pilot40_oracle_review_20261003/METHOD_COMPARISON.csv",
+    "source_sha256": "053b42018d47b62f14b693fcba049796d7a497a3b903c0b324a91738676f4b08",
+    "mode": "unchanged",
+    "packaged_sha256": "053b42018d47b62f14b693fcba049796d7a497a3b903c0b324a91738676f4b08"
+  },
+  {
+    "destination": "evidence/challenge/croco_o07_pilot40_oracle_review_20261003/RBS_SCENARIOS.csv",
+    "source": "screening/results/croco_o07_pilot40_oracle_review_20261003/RBS_SCENARIOS.csv",
+    "source_sha256": "168d1d3df8bc816a4bd5bf4814f3ce718f83be7fd50fd6676408c33c588fa3a8",
+    "mode": "unchanged",
+    "packaged_sha256": "168d1d3df8bc816a4bd5bf4814f3ce718f83be7fd50fd6676408c33c588fa3a8"
+  },
+  {
+    "destination": "evidence/challenge/croco_o07_pilot40_20261002/TILE_SAMPLE_VS_FULL_ALL20_20261003.csv",
+    "source": "screening/results/croco_o07_pilot40_20261002/TILE_SAMPLE_VS_FULL_ALL20_20261003.csv",
+    "source_sha256": "d8bcc3988fc0b688236253f774435bf2bd150ace6ca419771542e6e8f2715285",
+    "mode": "unchanged",
+    "packaged_sha256": "d8bcc3988fc0b688236253f774435bf2bd150ace6ca419771542e6e8f2715285"
+  },
+  {
+    "destination": "evidence/challenge/croco_o07_pilot40_20261002/condition_vs_identity_delta_PILOT40.csv",
+    "source": "screening/results/croco_o07_pilot40_20261002/condition_vs_identity_delta_PILOT40.csv",
+    "source_sha256": "aeb599f7c7bb564bfe51b94a41bbe1891214ad6207a60288bfe9706ba0b42f28",
+    "mode": "unchanged",
+    "packaged_sha256": "aeb599f7c7bb564bfe51b94a41bbe1891214ad6207a60288bfe9706ba0b42f28"
+  },
+  {
+    "destination": "evidence/challenge/croco_o07_pilot40_20261002/macro_vs_identity_delta_PILOT40.csv",
+    "source": "screening/results/croco_o07_pilot40_20261002/macro_vs_identity_delta_PILOT40.csv",
+    "source_sha256": "c54c7aa794b6d16db8403b653b1e26ff678d1d3d9cc09da3c93d5160685fe3ad",
+    "mode": "unchanged",
+    "packaged_sha256": "c54c7aa794b6d16db8403b653b1e26ff678d1d3d9cc09da3c93d5160685fe3ad"
+  },
+  {
+    "destination": "evidence/challenge/croco_o07_tile_global_receive_20261002/macro_vs_identity_delta.csv",
+    "source": "screening/results/croco_o07_tile_global_receive_20261002/macro_vs_identity_delta.csv",
+    "source_sha256": "00800b0f9ee29c0462fb0923351bcb4c87b0fa762364de4e17c50d8967482fe5",
+    "mode": "unchanged",
+    "packaged_sha256": "00800b0f9ee29c0462fb0923351bcb4c87b0fa762364de4e17c50d8967482fe5"
+  },
+  {
+    "destination": "evidence/challenge/croco_o07_tile_global_receive_20261002/FIRST_TWO_CONDITIONS.csv",
+    "source": "screening/results/croco_o07_tile_global_receive_20261002/FIRST_TWO_CONDITIONS.csv",
+    "source_sha256": "71912aaf1ac5d23fa7a7e387e72a1079df39ea21d3f1fb50619e239137796c77",
+    "mode": "unchanged",
+    "packaged_sha256": "71912aaf1ac5d23fa7a7e387e72a1079df39ea21d3f1fb50619e239137796c77"
+  },
+  {
+    "destination": "evidence/challenge/croco_o07_tile_global_receive_20261002/condition_task_vs_identity_delta.csv",
+    "source": "screening/results/croco_o07_tile_global_receive_20261002/condition_task_vs_identity_delta.csv",
+    "source_sha256": "fe597472a675080df97901e29aaa185411cc13fd318fae821df714585b310d1b",
+    "mode": "unchanged",
+    "packaged_sha256": "fe597472a675080df97901e29aaa185411cc13fd318fae821df714585b310d1b"
+  },
+  {
+    "destination": "kernels/paper/configs/robustspring_aligned_v2.json",
+    "source": "robustspring_aligned_v2.json",
+    "source_sha256": "03dece60d8488df833af43e8d168fa1be67c9d5bf31978cef3c40a61f1a91a13",
+    "mode": "unchanged",
+    "packaged_sha256": "03dece60d8488df833af43e8d168fa1be67c9d5bf31978cef3c40a61f1a91a13"
+  }
+]

@@ -1,0 +1,255 @@
+{
+  "scope": "Scalar extraction only; no inference or numerical transformation.",
+  "cache_scope": "Dense predictions and analysis pools are not distributed.",
+  "sources": [
+    {
+      "id": "evidence/camera_ready/adaptation/seed101/raft.jsonl",
+      "original_sha256": "dbd22eec999bd15f4c88ab072fccf9601d488f2035f5f611d75abb7bba6ed629",
+      "records": 172,
+      "retained_fields": [
+        "model",
+        "pair_id",
+        "scene",
+        "split",
+        "condition",
+        "assignment_seed",
+        "candidate_statistics",
+        "methods",
+        "pairwise_rank_counts",
+        "checkpoint_sha256",
+        "signal",
+        "GT_used_by_signal",
+        "picks"
+      ]
+    },
+    {
+      "id": "evidence/camera_ready/adaptation/seed101/acv.jsonl",
+      "original_sha256": "a1ce3eee31d026a6784fb0f3d7c0915552e3c2aec41c6b8c31c003a0adb8635b",
+      "records": 172,
+      "retained_fields": [
+        "model",
+        "pair_id",
+        "scene",
+        "split",
+        "condition",
+        "assignment_seed",
+        "candidate_statistics",
+        "methods",
+        "pairwise_rank_counts",
+        "checkpoint_sha256",
+        "signal",
+        "GT_used_by_signal",
+        "picks"
+      ]
+    },
+    {
+      "id": "evidence/camera_ready/adaptation/seed202/raft.jsonl",
+      "original_sha256": "04ab6be9b5303aa95aa7663a8585ad07315a9be46579238a7be1a4bdd3436975",
+      "records": 172,
+      "retained_fields": [
+        "model",
+        "pair_id",
+        "scene",
+        "split",
+        "condition",
+        "assignment_seed",
+        "candidate_statistics",
+        "methods",
+        "pairwise_rank_counts",
+        "checkpoint_sha256",
+        "signal",
+        "GT_used_by_signal",
+        "picks"
+      ]
+    },
+    {
+      "id": "evidence/camera_ready/adaptation/seed202/acv.jsonl",
+      "original_sha256": "fcb5d2ea12bf0c52e5203619c69523bf7ca430e395a6d294d541006f2678bb14",
+      "records": 172,
+      "retained_fields": [
+        "model",
+        "pair_id",
+        "scene",
+        "split",
+        "condition",
+        "assignment_seed",
+        "candidate_statistics",
+        "methods",
+        "pairwise_rank_counts",
+        "checkpoint_sha256",
+        "signal",
+        "GT_used_by_signal",
+        "picks"
+      ]
+    },
+    {
+      "id": "evidence/camera_ready/adaptation/seed303/raft.jsonl",
+      "original_sha256": "579ea1276e2ec14d38e6420a810061ac34446d1e0c48d4a76f792702ea6016c7",
+      "records": 172,
+      "retained_fields": [
+        "model",
+        "pair_id",
+        "scene",
+        "split",
+        "condition",
+        "assignment_seed",
+        "candidate_statistics",
+        "methods",
+        "pairwise_rank_counts",
+        "checkpoint_sha256",
+        "signal",
+        "GT_used_by_signal",
+        "picks"
+      ]
+    },
+    {
+      "id": "evidence/camera_ready/adaptation/seed303/acv.jsonl",
+      "original_sha256": "9c4a615af89d8ac273424b2a49a3973d72db6c245b06f19437ef0423bf6ca671",
+      "records": 172,
+      "retained_fields": [
+        "model",
+        "pair_id",
+        "scene",
+        "split",
+        "condition",
+        "assignment_seed",
+        "candidate_statistics",
+        "methods",
+        "pairwise_rank_counts",
+        "checkpoint_sha256",
+        "signal",
+        "GT_used_by_signal",
+        "picks"
+      ]
+    },
+    {
+      "id": "evidence/camera_ready/fixed-dev/raft.jsonl",
+      "original_sha256": "642ae2da2246df283f24ddb114ef43162e7f31e1b71fada608c5caab4232bb87",
+      "records": 328,
+      "retained_fields": [
+        "model",
+        "pair_id",
+        "scene",
+        "split",
+        "condition",
+        "assignment_seed",
+        "candidate_statistics",
+        "methods",
+        "pairwise_rank_counts",
+        "checkpoint_sha256",
+        "signal",
+        "GT_used_by_signal"
+      ]
+    },
+    {
+      "id": "evidence/camera_ready/fixed-dev/acv.jsonl",
+      "original_sha256": "7803942ccbed049a8edcfe068e89d9b9e8917fc08367cac5e7c95aa34f3a536b",
+      "records": 328,
+      "retained_fields": [
+        "model",
+        "pair_id",
+        "scene",
+        "split",
+        "condition",
+        "assignment_seed",
+        "candidate_statistics",
+        "methods",
+        "pairwise_rank_counts",
+        "checkpoint_sha256",
+        "signal",
+        "GT_used_by_signal"
+      ]
+    },
+    {
+      "id": "evidence/camera_ready/clean/raft.jsonl",
+      "original_sha256": "49f53217ccfb31dc38ea6c0d018b2841d5abc1928001a616dad3df9588dcff55",
+      "records": 172,
+      "retained_fields": [
+        "model",
+        "pair_id",
+        "scene",
+        "split",
+        "condition",
+        "assignment_seed",
+        "candidate_statistics",
+        "methods",
+        "pairwise_rank_counts",
+        "checkpoint_sha256",
+        "signal",
+        "GT_used_by_signal"
+      ]
+    },
+    {
+      "id": "evidence/camera_ready/clean/acv.jsonl",
+      "original_sha256": "69594d2a36568d1eb534e323092027db0ca0df68138f5dc685341ef520cef1f5",
+      "records": 172,
+      "retained_fields": [
+        "model",
+        "pair_id",
+        "scene",
+        "split",
+        "condition",
+        "assignment_seed",
+        "candidate_statistics",
+        "methods",
+        "pairwise_rank_counts",
+        "checkpoint_sha256",
+        "signal",
+        "GT_used_by_signal"
+      ]
+    },
+    {
+      "id": "evidence/camera_ready/denoise/raft.jsonl",
+      "original_sha256": "301f2c32d9dc505863102fd9532e97d0585f839b3cc30396908aa4648b8506e8",
+      "records": 611,
+      "retained_fields": [
+        "model",
+        "pair_id",
+        "scene",
+        "split",
+        "condition",
+        "assignment_seed",
+        "candidate_statistics",
+        "methods",
+        "pairwise_rank_counts",
+        "checkpoint_sha256",
+        "signal",
+        "GT_used_by_signal"
+      ]
+    },
+    {
+      "id": "evidence/camera_ready/denoise/acv.jsonl",
+      "original_sha256": "1e8d8768570f3853ee85087d29f6f0048f9ad6c2c6126b729a8bcdf27ffff24e",
+      "records": 611,
+      "retained_fields": [
+        "model",
+        "pair_id",
+        "scene",
+        "split",
+        "condition",
+        "assignment_seed",
+        "candidate_statistics",
+        "methods",
+        "pairwise_rank_counts",
+        "checkpoint_sha256",
+        "signal",
+        "GT_used_by_signal"
+      ]
+    },
+    {
+      "id": "evidence/camera_ready/consensus.jsonl",
+      "original_sha256": "1b16303f2c2d276112ace62a9492263920635f5b3ef5e436a817af388c42a850",
+      "records": 1032,
+      "retained_fields": [
+        "model",
+        "assignment_seed",
+        "pair_id",
+        "condition",
+        "candidate_id",
+        "scores",
+        "coordinates_sha256",
+        "GT_used"
+      ]
+    }
+  ]
+}

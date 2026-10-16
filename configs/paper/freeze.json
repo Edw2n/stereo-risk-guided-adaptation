@@ -1,0 +1,57 @@
+{
+  "scope": "generic seed101 held-out evaluation; no fitting or bank revision on held-out",
+  "primary_sha256": "318c54aa868ee096e28f632ef873cd1339fb76454c9cc7cd6acea8448d4bdfbc",
+  "primary_signals": {
+    "raft": "late_std",
+    "acv": "attention_entropy"
+  },
+  "signal_parameters": {
+    "raft": {
+      "last_n": 4,
+      "iterations": 32
+    },
+    "acv": {
+      "maxdisp": 192
+    }
+  },
+  "bank_sha256": "39ae796cfd9c7798a214cd4c1c3c42a4218788d1a9de01a2ca88c3c62beb4fee",
+  "parent_generic_config_sha256": "2d6edc89b1041706210f328d3965156754aa037cd1492b98bcca61469563f833",
+  "implementation_sha256": {
+    "generic_transform_v1.py": "f9b98f61a36a6c0c95b28bd1dd16f1b2fff2247bc619fe1cb72a280efd59087d",
+    "generic_heldout_v1.py": "c8e4a7fbbaf3f5a72244630f92d40d71f08f557a4ff2ed8732d370face7ac78b",
+    "run_generic_heldout_v1.py": "4a6bb8bc2e7872d47560c8908f0599d60bed2d8635e4dc13d0f7bdbf62c76629",
+    "report_generic_heldout_v1.py": "c5db1e2a9113ebe54e40eb584eb92ab73b17a8b749129356a9b3e2d296f06cd4",
+    "sensor_v4_images.py": "b227bd0fdcfab9435956a5e7b4df26508d33d0346a2f7ae8b516c7e8992306d5",
+    "sensor_v4_metrics.py": "2caee436164257a5ff232aec511592bd466e9fef344c9ebfe2489d6c188ff322",
+    "sensor_v4_rank_selection.py": "c2c80ea375bba5794915cdc7ffc596eab1f5fd1a2a52a2523d02797646248d51",
+    "sensor_v4_signals.py": "88e67b1ccf9b086ea04b65003ad216fcc666d6720cafd18a666f19c261479fd8",
+    "raft_adapter.py": "8a9440fc420432643ffbb0f73cb12e713052d9633afa0a74295b36099c3dfb68",
+    "acv_adapter.py": "702e10aa86d32bf3871ff8e54864e1aed4e96b242da9b8742eddf201092a6699",
+    "broad_sweep_v4.py": "b7b27e41bbd2776f4822746603666df311c21d286d0617f7b70ecb30fabac74b",
+    "candidate_adequacy_v4.py": "aefcdf48e8a7d5749d465825b5198ba372c1d195ef6c1dfe343bf1a168f8e043",
+    "native/risk_pair_counts.cpp": "ea66054b6a77a4464f81fe87639f1203f825dc83aef79d076e35d997a1ae0960"
+  },
+  "generic_dev_performance_used": false,
+  "Fixed_best_in_table": false,
+  "operator_order": {
+    "order": [
+      "linear_exposure",
+      "contrast",
+      "clip_before_gamma",
+      "gamma",
+      "saturation",
+      "detail",
+      "final_clip_quantize"
+    ],
+    "exposure": "sRGB to linear; multiply 2**EV; unclipped inverse sRGB transfer (float highlights preserved)",
+    "contrast": "sRGB, per-image per-channel float64 spatial mean center; factor 2**c",
+    "gamma": "clip RGB [0,1], convert float32, then x**(2**g)",
+    "saturation": "OpenCV float RGB to HSV; S *= 2**s; S clipped [0,1]; HSV to RGB",
+    "detail": "d<0: Gaussian sigma=2*abs(d); d>0: x+2*d*(x-Gaussian(x,sigma=1)); d=0 identity; BORDER_REFLECT_101",
+    "quantization": "final clip [0,1], multiply255, np.rint, uint8; no intermediate uint8",
+    "identity": "exact input copy",
+    "spatial_warp": false,
+    "GT_change": false,
+    "stereo_parameters": "identical vector per candidate, content-dependent channel means computed separately per eye"
+  }
+}

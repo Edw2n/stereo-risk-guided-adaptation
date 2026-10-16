@@ -1,0 +1,13 @@
+\begin{tabular}{llrrrrrrrr}
+\toprule
+ & & Reference & \multicolumn{3}{c}{Baselines} & \multicolumn{2}{c}{Adaptation} & \multicolumn{2}{c}{Oracles} \\
+Model & Metric $\downarrow$ & Source / Clean & Identity & Random & Fixed-best & Signal-Global & Signal-Pixel & Global & Pixel \\
+\midrule
+RAFT-Stereo & Abs (px) $\downarrow$ & 0.586 & 5.360 & 8.546 & 6.800 & 3.448 & 5.656 & 5.375 & 2.235 \\
+ & 1px (\%) $\downarrow$ & 14.037 & 29.024 & 30.716 & 27.462 & 26.507 & 26.611 & 26.178 & 18.732 \\
+ & D1 (\%) $\downarrow$ & 3.618 & 15.847 & 17.192 & 13.224 & 12.895 & 13.475 & 11.525 & 9.282 \\
+ACVNet & Abs (px) $\downarrow$ & 0.735 & 27.486 & 33.364 & 9.058 & 9.584 & 11.990 & 5.667 & 2.554 \\
+ & 1px (\%) $\downarrow$ & 15.464 & 43.960 & 49.502 & 41.904 & 38.082 & 38.156 & 37.683 & 22.093 \\
+ & D1 (\%) $\downarrow$ & 2.327 & 30.115 & 35.283 & 18.375 & 18.719 & 18.317 & 13.377 & 7.761 \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,51 @@
+{
+  "scope": "README presentation only; no new inference or numerical changes",
+  "paper_table": {
+    "path": "docs/results/paper_adaptation.csv",
+    "source_sha256": "67897a1b44c774856858cdf55edc6453166880c6c3c49e0d6e662feb5bd72abc",
+    "condition": "six_corruption_macro",
+    "assignment_seeds": [
+      101,
+      202,
+      303
+    ],
+    "source_command": "python reproduce.py paper report --run-id paper",
+    "format": "two decimal places; unrounded means and confidence intervals in CSV"
+  },
+  "challenge_sources": [
+    {
+      "path": "evidence/challenge/croco_o07_tile_global_receive_20261002/macro_vs_identity_delta.csv",
+      "sha256": "00800b0f9ee29c0462fb0923351bcb4c87b0fa762364de4e17c50d8967482fe5"
+    },
+    {
+      "path": "evidence/challenge/croco_tile_global_robust_B_20261003/SERVER_RESULT.json",
+      "sha256": "257e95ba8f4066f5f9feeb7c9052aa5617eeace79dd04d893d172c2450dc8a13"
+    }
+  ],
+  "images": [
+    {
+      "path": "docs/images/acv_gaussian_global.png",
+      "source": "Camera-ready Figure 2: global",
+      "source_filename": "generic_acv_gaussian_global.png",
+      "sha256": "c852d561d2b03c3f92db9b76e944d29d755d8debce20de28dc7c7cff99d40384",
+      "pair": "0014/0154",
+      "model": "ACVNet",
+      "condition": "gaussian_noise",
+      "assignment_seed": 101,
+      "candidate_count": 31,
+      "image_modified": false
+    },
+    {
+      "path": "docs/images/acv_gaussian_pixel.png",
+      "source": "Camera-ready Figure 2: pixel",
+      "source_filename": "generic_acv_gaussian_pixel.png",
+      "sha256": "990b046fde8c08f28e6201c19513b720803e0745946ba71e6c096957bf23a608",
+      "pair": "0014/0154",
+      "model": "ACVNet",
+      "condition": "gaussian_noise",
+      "assignment_seed": 101,
+      "candidate_count": 31,
+      "image_modified": false
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+torch==2.4.1
+torchvision==0.19.1
+numpy==1.26.4
+scipy==1.14.1
+scikit-learn==1.5.2
+h5py==3.12.1
+opencv-python-headless==4.9.0.80
+Pillow==11.0.0
+matplotlib==3.9.2
+tqdm==4.67.1
+einops==0.8.1
+timm==0.5.4

@@ -1,0 +1,142 @@
+[
+  {
+    "model": "raft",
+    "quantity": "Global Signal gain",
+    "mean": 2.951977568078899,
+    "seed_SD": 0.16369789101179866,
+    "ci_low": 1.3321488985323098,
+    "ci_high": 4.897604474686143,
+    "unit": "percentage points",
+    "seeds": 3
+  },
+  {
+    "model": "raft",
+    "quantity": "Global Oracle headroom",
+    "mean": 4.3212527604023565,
+    "seed_SD": 0.249831159170123,
+    "ci_low": 2.383960303309384,
+    "ci_high": 6.660198678912586,
+    "unit": "percentage points",
+    "seeds": 3
+  },
+  {
+    "model": "raft",
+    "quantity": "Global recovery",
+    "mean": 0.6832725852817604,
+    "seed_SD": 0.011744133727885055,
+    "ci_low": 0.5468870542714758,
+    "ci_high": 0.767177383843007,
+    "unit": "fraction",
+    "seeds": 3
+  },
+  {
+    "model": "raft",
+    "quantity": "Pixel Signal gain",
+    "mean": 2.3720148284596774,
+    "seed_SD": 0.21778196627102728,
+    "ci_low": 1.03021985318466,
+    "ci_high": 4.168101383262607,
+    "unit": "percentage points",
+    "seeds": 3
+  },
+  {
+    "model": "raft",
+    "quantity": "Pixel Oracle headroom",
+    "mean": 6.564322128447974,
+    "seed_SD": 0.22756558807855196,
+    "ci_low": 3.9642576722443916,
+    "ci_high": 9.608230204985096,
+    "unit": "percentage points",
+    "seeds": 3
+  },
+  {
+    "model": "raft",
+    "quantity": "Pixel recovery",
+    "mean": 0.3609817662137025,
+    "seed_SD": 0.02316373233039765,
+    "ci_low": 0.2214664611536887,
+    "ci_high": 0.4623884731162847,
+    "unit": "fraction",
+    "seeds": 3
+  },
+  {
+    "model": "raft",
+    "quantity": "Extra pixel-wise headroom",
+    "mean": 2.2430693680456177,
+    "seed_SD": 0.05616993443321401,
+    "ci_low": 1.4308888528980133,
+    "ci_high": 3.322548554373694,
+    "unit": "percentage points",
+    "seeds": 3
+  },
+  {
+    "model": "acv",
+    "quantity": "Global Signal gain",
+    "mean": 11.396620975161051,
+    "seed_SD": 0.24821314349686446,
+    "ci_low": 5.35689706022037,
+    "ci_high": 17.35931835740483,
+    "unit": "percentage points",
+    "seeds": 3
+  },
+  {
+    "model": "acv",
+    "quantity": "Global Oracle headroom",
+    "mean": 16.73776139401929,
+    "seed_SD": 0.4080232072630238,
+    "ci_low": 11.318012013884921,
+    "ci_high": 22.083613913114696,
+    "unit": "percentage points",
+    "seeds": 3
+  },
+  {
+    "model": "acv",
+    "quantity": "Global recovery",
+    "mean": 0.680950005563432,
+    "seed_SD": 0.007622394797752005,
+    "ci_low": 0.4565609865315858,
+    "ci_high": 0.8092023259633635,
+    "unit": "fraction",
+    "seeds": 3
+  },
+  {
+    "model": "acv",
+    "quantity": "Pixel Signal gain",
+    "mean": 11.797809066997944,
+    "seed_SD": 0.30505546258262844,
+    "ci_low": 7.056979542310771,
+    "ci_high": 16.48504405310594,
+    "unit": "percentage points",
+    "seeds": 3
+  },
+  {
+    "model": "acv",
+    "quantity": "Pixel Oracle headroom",
+    "mean": 22.35406066228276,
+    "seed_SD": 0.4535640576870597,
+    "ci_low": 17.820218216366754,
+    "ci_high": 26.739130979945543,
+    "unit": "percentage points",
+    "seeds": 3
+  },
+  {
+    "model": "acv",
+    "quantity": "Pixel recovery",
+    "mean": 0.5277318127512407,
+    "seed_SD": 0.0033554806925261606,
+    "ci_low": 0.3843228601559682,
+    "ci_high": 0.6342279959519977,
+    "unit": "fraction",
+    "seeds": 3
+  },
+  {
+    "model": "acv",
+    "quantity": "Extra pixel-wise headroom",
+    "mean": 5.616299268263471,
+    "seed_SD": 0.14261164533920861,
+    "ci_low": 3.759654863761305,
+    "ci_high": 7.458785390560118,
+    "unit": "percentage points",
+    "seeds": 3
+  }
+]

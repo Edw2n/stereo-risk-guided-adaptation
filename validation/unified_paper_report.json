@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "scope": "One final-paper report command; aggregation definitions and inference protocols unchanged.",
+  "GPU_inference": false,
+  "cpu_tests_passed": 36,
+  "compatibility_alias": "camera-ready shares the report parser and dispatch",
+  "comparisons": {
+    "native_metrics.csv": {
+      "byte_exact": true,
+      "sha256": "67897a1b44c774856858cdf55edc6453166880c6c3c49e0d6e662feb5bd72abc"
+    },
+    "clean_preservation.csv": {
+      "byte_exact": true,
+      "sha256": "48ec914ed6bb87476870ece9c8416275cd2684e14d276d9ecc41712edf21297c"
+    },
+    "signal_vs_baselines.csv": {
+      "byte_exact": true,
+      "sha256": "957fbf4a8e24db33d5776aaf27954f9cf72ff959fe14199d1062f3bb92717bfa"
+    },
+    "dev_candidate_ranking.csv": {
+      "byte_exact": true,
+      "sha256": "fad4b0db97b0460bcf4ff73d7395fd22ebb5b9f2871d1fbeed46d4bed7bdf64f"
+    },
+    "adaptation.tex": {
+      "byte_exact": true,
+      "sha256": "6d9c1b9a822d85fdbd47ab8215715147b5ae01c63fe86d465034af515910573c"
+    },
+    "table1_development.csv": {
+      "byte_exact": true,
+      "sha256": "a81ea2f8f5600a24dd1437b4e20d9e7e411d4e41fadb577c241cf7e0d25ce569"
+    },
+    "three_seed_D1.csv": {
+      "byte_exact": true,
+      "sha256": "eda7af5e7b07844dcf28a5def8fb8a0b25569c45a5346b0ec83a593b529f3f8b"
+    },
+    "three_seed_D1.json": {
+      "byte_exact": true,
+      "sha256": "8a865201b4cad480464326ac163a63476e3ef0b728a8cf450bf3613a1e44563b"
+    },
+    "per_seed_D1.csv": {
+      "byte_exact": true,
+      "sha256": "3fd11e4546d8e3a13ee2c0206e87e0679fb7bfb061c6c84583c7e39fdbd26b5d"
+    },
+    "per_seed_D1.json": {
+      "byte_exact": true,
+      "sha256": "84ea6c041b7c681b00d6589eec8872c07a02af13a8b96c38d5683d712a9f456a"
+    },
+    "adaptation.png": {
+      "generated": true
+    },
+    "adaptation.pdf": {
+      "generated": true
+    },
+    "condition_response.png": {
+      "generated": true
+    },
+    "condition_response.pdf": {
+      "generated": true
+    },
+    "proxy_levels.png": {
+      "generated": true
+    },
+    "proxy_levels.pdf": {
+      "generated": true
+    }
+  }
+}

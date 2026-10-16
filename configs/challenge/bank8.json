@@ -1,0 +1,94 @@
+{
+  "candidate_ids": [
+    "identity",
+    "joint_03",
+    "joint_11",
+    "joint_14",
+    "joint_15",
+    "joint_22",
+    "joint_23",
+    "joint_28"
+  ],
+  "candidates": [
+    {
+      "id": "identity",
+      "parameters": {
+        "exposure": 0.0,
+        "contrast": 0.0,
+        "gamma": 0.0,
+        "saturation": 0.0,
+        "detail": 0.0
+      }
+    },
+    {
+      "id": "joint_03",
+      "parameters": {
+        "exposure": -0.5671705922305976,
+        "contrast": -0.4226772693978842,
+        "gamma": -0.8585490409254314,
+        "saturation": -0.6744351126518475,
+        "detail": -0.5591358142314574
+      }
+    },
+    {
+      "id": "joint_11",
+      "parameters": {
+        "exposure": 0.18227497135139448,
+        "contrast": 0.28638620498362166,
+        "gamma": -0.4352856424651912,
+        "saturation": -0.38396863408546145,
+        "detail": -0.2774139066338638
+      }
+    },
+    {
+      "id": "joint_14",
+      "parameters": {
+        "exposure": 0.8122534738153797,
+        "contrast": -0.3473295858912539,
+        "gamma": -0.26313192473858293,
+        "saturation": 0.03854250230802503,
+        "detail": -0.8707380904254469
+      }
+    },
+    {
+      "id": "joint_15",
+      "parameters": {
+        "exposure": -0.8957701844793078,
+        "contrast": 0.411938962783549,
+        "gamma": -0.1327920214221041,
+        "saturation": -0.4214969361668953,
+        "detail": 0.3747094243755065
+      }
+    },
+    {
+      "id": "joint_22",
+      "parameters": {
+        "exposure": 0.9893921670464931,
+        "contrast": 0.44547814672095365,
+        "gamma": 0.567237150154924,
+        "saturation": -0.4959834601939369,
+        "detail": 0.1964440330619257
+      }
+    },
+    {
+      "id": "joint_23",
+      "parameters": {
+        "exposure": -0.8236465293488942,
+        "contrast": 0.33905535574810797,
+        "gamma": -0.38272988927239615,
+        "saturation": -0.7815007113607533,
+        "detail": -0.4013958779053326
+      }
+    },
+    {
+      "id": "joint_28",
+      "parameters": {
+        "exposure": 0.10533893059588006,
+        "contrast": -0.6771225788838953,
+        "gamma": 0.7884371004001416,
+        "saturation": -0.6437136134903958,
+        "detail": -0.06522265803400962
+      }
+    }
+  ]
+}

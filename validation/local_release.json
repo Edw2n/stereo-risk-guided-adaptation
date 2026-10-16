@@ -1,0 +1,96 @@
+{
+  "date": "2026-10-16",
+  "status": "PASS",
+  "GPU_inference": false,
+  "upload": false,
+  "push": false,
+  "runtime": "Existing pinned reference environments; not a fresh dependency installation.",
+  "checks": {
+    "native_metrics.csv": {
+      "rows": 140,
+      "numeric_cells": 3780,
+      "comparison": "exact",
+      "differences": 0
+    },
+    "clean_preservation.csv": {
+      "rows": 18,
+      "numeric_cells": 360,
+      "comparison": "exact",
+      "differences": 0
+    },
+    "signal_vs_baselines.csv": {
+      "rows": 70,
+      "numeric_cells": 630,
+      "comparison": "exact",
+      "differences": 0
+    },
+    "dev_candidate_ranking.csv": {
+      "rows": 31,
+      "numeric_cells": 341,
+      "comparison": "exact",
+      "differences": 0
+    },
+    "three_seed_metrics": {
+      "comparison": "exact JSON equality",
+      "status": "PASS"
+    },
+    "three_seed_D1": {
+      "comparison": "exact JSON equality",
+      "status": "PASS"
+    },
+    "per_seed_metrics": {
+      "comparison": "exact JSON equality",
+      "status": "PASS"
+    },
+    "per_seed_D1": {
+      "comparison": "exact JSON equality",
+      "status": "PASS"
+    },
+    "budget": {
+      "rows": 840,
+      "numeric_cells": 22338,
+      "comparison": "exact",
+      "differences": 0
+    },
+    "conditions": {
+      "rows": 98,
+      "numeric_cells": 2646,
+      "comparison": "exact",
+      "differences": 0
+    },
+    "M03_left": {
+      "array_sha256": "b71e6b55fff2e7d55e634d487db3f7a426c58d5fcd277190b310505b1a8604ae",
+      "comparison": "bitwise reference match",
+      "pairs": 1
+    },
+    "M03_right": {
+      "array_sha256": "3a06be7e9bf511d7eeb3f79b08940f338c5440cf112b49f02e68b22b647bd781",
+      "comparison": "bitwise reference match",
+      "pairs": 1
+    },
+    "numerical_kernels": {
+      "files": 35,
+      "unchanged": true
+    },
+    "vendor": {
+      "files": 203,
+      "status": "PASS",
+      "tree_sha256": "71fce3dad7f39787df390e06fdc478bc92895441e7886adefce9f164f3f46315"
+    },
+    "cpu_tests": {
+      "tests": 36,
+      "status": "PASS"
+    },
+    "release_text": {
+      "personal_paths": 0,
+      "operational_site_labels": 0,
+      "non_English_project_text": 0,
+      "external_license_text": "retained unchanged"
+    }
+  },
+  "scope_limits": [
+    "Dense caches, data and checkpoints are not in Git.",
+    "Official packaging regression uses a stub binary; no real submission is generated or uploaded.",
+    "Full-dataset and cross-GPU bitwise inference were not rerun."
+  ]
+}

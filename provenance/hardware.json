@@ -1,0 +1,60 @@
+{
+  "observed_at_utc": "2026-10-04T02:20:36.169596+00:00",
+  "scope": "Reference environment for reproduction smoke tests; not minimum system requirements.",
+  "gpu": {
+    "count": 1,
+    "name": "NVIDIA H100 NVL",
+    "memory_total_mib": 95830,
+    "driver_version": "580.82.07",
+    "shared": true
+  },
+  "cpu": {
+    "model": "Intel Xeon Gold 6526Y",
+    "sockets": 2,
+    "cores_per_socket": 16,
+    "threads_per_core": 2,
+    "physical_cores": 32,
+    "logical_cpus": 64
+  },
+  "ram": {
+    "linux_mem_total_kib": 528044796
+  },
+  "storage": {
+    "mount": "/storage1",
+    "total_bytes": 17927506436096,
+    "usage_scope": "Large assets and outputs; free capacity is not a fixed requirement"
+  },
+  "os": {
+    "name": "Ubuntu 22.04.3 LTS",
+    "kernel": "5.15.0-153-generic",
+    "architecture": "x86_64"
+  },
+  "environments": {
+    "paper": {
+      "python": "3.13.13",
+      "pytorch": "2.11.0+cu128",
+      "cuda_runtime": "12.8.90"
+    },
+    "croco": {
+      "python": "3.10.12",
+      "pytorch": "2.4.1",
+      "cuda_runtime": "12.1.105"
+    },
+    "foundation": {
+      "python": "3.10.12",
+      "pytorch": "2.4.1",
+      "cuda_runtime": "12.1.105"
+    }
+  },
+  "measurement_sources": [
+    "lscpu",
+    "/proc/meminfo",
+    "statvfs(/storage1)",
+    "/etc/os-release",
+    "uname -r",
+    "nvidia-smi --query-gpu=name,memory.total,driver_version --format=csv,noheader",
+    "provenance/environment_*.json"
+  ],
+  "cuda_note": "nvidia-smi reports driver CUDA compatibility 13.0, not the per-environment PyTorch CUDA runtime.",
+  "validation_scope": "Small GPU smoke tests and CPU regressions; no full experiment rerun or throughput benchmark during cleanup."
+}

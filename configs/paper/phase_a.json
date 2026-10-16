@@ -1,0 +1,355 @@
+{
+  "protocol_id": "sensor_selection_v4",
+  "status": "Phase_A_GO_dev_reports_first_Table3_manual_gates_retained",
+  "reporting": {
+    "phase_a_default_scope": "dev",
+    "test_results": "sealed on storage1 until manual signal, bank and Fixed-best freeze; no test/all-split summaries before freeze",
+    "dev_sensitivity_pixels": [
+      20000,
+      40000
+    ],
+    "table3_execution_requires_separate_approval": true
+  },
+  "storage_root": "/storage1/USER/stereo-risk/outputs",
+  "manifest": "manifests/sensor_v4_500.json",
+  "sampling": {
+    "pairs": 500,
+    "allocation": "Hamilton largest remainder proportional to sequence length",
+    "temporal": "midpoints of equal-count temporal strata",
+    "split_seed": 20260925,
+    "dev_sequences": 25,
+    "test_sequences": 12
+  },
+  "models": {
+    "raft": {
+      "checkpoint": "checkpoints/raftstereo-sceneflow.pth",
+      "checkpoint_sha256": "ba75bdcb379b4c3942d1e714565d0e66e6b2450a3da8129f54073302d67e0a6d",
+      "batch": 2,
+      "iterations": 32,
+      "last_n": 4,
+      "internal_signals": [
+        "late_std",
+        "late_mean_update",
+        "final_update",
+        "negative_peak",
+        "negative_margin",
+        "entropy"
+      ]
+    },
+    "acv": {
+      "checkpoint": "checkpoints/acvnet/ACVNet/sceneflow.ckpt",
+      "checkpoint_sha256": "a48e1f719dfaa07a6376ffd7b8ac6d560afc72c558793efe665c659924f904ac",
+      "batch": 4,
+      "maxdisp": 192,
+      "internal_signals": [
+        "negative_peak",
+        "negative_margin",
+        "entropy",
+        "attention_negative_peak",
+        "attention_negative_margin",
+        "attention_entropy"
+      ]
+    }
+  },
+  "inference": {
+    "height": 1080,
+    "width": 1920,
+    "precision": "fp32",
+    "tf32": false,
+    "gpu_processes": 1,
+    "cpu_preprocess_workers": 2,
+    "cpu_metric_workers": 2,
+    "minimum_free_margin_gib": 1.0
+  },
+  "conditions": [
+    "clean",
+    "brightness",
+    "contrast",
+    "saturation",
+    "gaussian_noise",
+    "shot_noise",
+    "speckle_noise"
+  ],
+  "corruption": {
+    "source": "https://arxiv.org/html/2505.09368v2#A1.SS3.SSS3",
+    "input_space": "normalized sRGB, float32 HWC",
+    "quantization": "clip to [0,1], multiply by 255, np.rint, uint8",
+    "strength_convention": "one published setting per corruption; no invented severity sweep",
+    "input_seed": 20260925,
+    "noise": "NumPy PCG64; independent per RGB element, eye and frame; stable across models and assignment repetitions",
+    "brightness": {
+      "offset": 0.39,
+      "convention": "literal Eq.4 addition in RGB; HSV V ancestor ambiguity explicitly retained"
+    },
+    "contrast": {
+      "factor": 0.16,
+      "center": "per-image, per-channel spatial mean, float64 accumulation"
+    },
+    "saturation": {
+      "scale": 2.3,
+      "offset": 0.01,
+      "conversion": "OpenCV float RGB-HSV-RGB; H degrees, S/V [0,1]"
+    },
+    "gaussian_noise": {
+      "sigma": 0.115
+    },
+    "shot_noise": {
+      "rate": 23.0
+    },
+    "speckle_noise": {
+      "sigma": 0.45,
+      "convention": "I + I * sigma * independent standard normal HWC"
+    }
+  },
+  "metrics": {
+    "native": [
+      "Abs",
+      "1px",
+      "D1"
+    ],
+    "valid": "all four native-grid GT candidates finite; zero disparity retained",
+    "error": "min over four absolute errors, GT already in native image pixel units",
+    "D1": "error > 3 AND error > 0.05 * max(abs(four GT candidates))",
+    "primary_aggregation": "sum sufficient statistics over all valid pixels; six-corruption macro excludes clean",
+    "secondary_support": "all four GT candidates finite and 0 <= d < 192, both models",
+    "bootstrap": {
+      "unit": "sequence",
+      "replicates": 1000,
+      "seed": 1741,
+      "confidence": 0.95
+    },
+    "table2_sample_pixels_per_pair": 20000,
+    "analysis_cache": {
+      "format": "scene_hdf5_pool_v1",
+      "max_pool_pixels": 50000,
+      "pool_seed": 20260925,
+      "chunk_pixels": 4096,
+      "compression": "none",
+      "subset_seed": 0,
+      "subset_rule": "shared ordered pool; nested prefix by default; optional seeded permutation within saved pool",
+      "coordinates": "one shared GT-valid x>=4 coordinate pool per pair, across models/conditions/signals",
+      "full_maps": false,
+      "common_support": "GT-only uint8 mask stored once per pair alongside shared coordinates; secondary filtering of the chosen analysis prefix",
+      "status": "50k storage plus 20k primary analysis explicitly adopted by user"
+    },
+    "table2_sample_mask": "GT-valid, x >= 4 for both models; no masking based on score magnitude or error",
+    "table2": {
+      "label": "native D1",
+      "point_metrics": [
+        "AUROC",
+        "AUPR_average_precision",
+        "Spearman",
+        "prevalence"
+      ],
+      "aggregation": "condition-specific pooled sampled pixels, then equal-weight six-corruption macro",
+      "ci": "sequence cluster bootstrap with fixed score histogram; exact point metrics and histogram approximation check",
+      "ci_score_bins": 4096,
+      "ci_max_point_error": 0.002
+    }
+  },
+  "signals": {
+    "orientation": "higher = higher failure risk",
+    "baselines": [
+      "random",
+      "negative_texture",
+      "disparity_magnitude",
+      "disparity_gradient"
+    ],
+    "selection": {
+      "split": "dev",
+      "conditions": "six corruptions only",
+      "primary": "macro AUROC",
+      "auroc_practical_tie": 0.005,
+      "secondary": "maximum macro AP among AUROC practical ties",
+      "aupr_practical_tie": 0.0,
+      "ap_numerical_tie_atol": 1e-12,
+      "ap_numerical_tie_rtol": 0.0,
+      "tertiary": "worst-corruption AUROC only for numerical AP ties; no practical AP tie band",
+      "baseline_eligible": false,
+      "manual_freeze_required": true
+    },
+    "frozen_primary": null
+  },
+  "table3": {
+    "incoming_scope_revision": "generalization10_v1",
+    "incoming_conditions": [
+      "clean",
+      "brightness",
+      "contrast",
+      "saturation",
+      "gaussian_noise",
+      "shot_noise",
+      "speckle_noise",
+      "gaussian_blur",
+      "jpeg_compression",
+      "pixelate"
+    ],
+    "incoming_families": {
+      "clean": [
+        "clean"
+      ],
+      "sensing_related": [
+        "brightness",
+        "contrast",
+        "saturation",
+        "gaussian_noise",
+        "shot_noise",
+        "speckle_noise"
+      ],
+      "broader": [
+        "gaussian_blur",
+        "jpeg_compression",
+        "pixelate"
+      ]
+    },
+    "assignment_manifest_prefix": "manifests/sensor_v4_table3_generalization10_assignment",
+    "broader_corruptions": {
+      "source": "notes/ROBUSTSPRING_CORRUPTIONS.md; configs/robustspring_aligned_v2.json; same v2 operator implementation",
+      "claim": "RobustSpring-aligned controlled recipes, not exact official-generator pixels; no GT warp",
+      "gaussian_blur": {
+        "sigma_px": 4.0,
+        "implementation": "OpenCV GaussianBlur RGB uint8, automatic kernel size (0,0), BORDER_REFLECT_101"
+      },
+      "jpeg_compression": {
+        "quality": 6,
+        "subsampling": 2,
+        "optimize": false,
+        "progressive": false,
+        "implementation": "Pillow JPEG RGB encode/decode, 4:2:0; record Pillow/libjpeg version"
+      },
+      "pixelate": {
+        "size_fraction": 0.16,
+        "implementation": "Pillow BOX downsample then BOX restore native size; floor width/height separately, minimum 1"
+      },
+      "consistency": "deterministic identical settings for both eyes and frames; content differs; no spatial coordinate warp or GT change"
+    },
+    "generalization_policy": "primary signal and Fixed-best frozen on original seven-condition dev domain; no refit on broader held-out conditions; exposure/gain action space unchanged",
+    "report_aggregation": "per seed/model/method: pooled native sufficient statistics for overall, clean, sensing_related, broader and each condition; additional equal-condition macro explicitly labeled",
+    "selection_revision": "pixel_rank_v1",
+    "claim": "synthetic sensor-setting simulation, not hardware control",
+    "K": 7,
+    "bank_status": "initial dev-calibration bank; NOT frozen",
+    "variant_seed": 9137,
+    "gain_noise": {
+      "read_sigma_linear": 0.003,
+      "shot_scale_linear": 0.002,
+      "formula": "linear signal * gain + Normal(0, sqrt((read_sigma*gain)^2 + shot_scale^2*gain*max(linear signal,0))); independent HWC noise"
+    },
+    "candidates": [
+      {
+        "id": "ev_m1",
+        "ev": -1.0,
+        "gain": 1.0
+      },
+      {
+        "id": "ev_m05",
+        "ev": -0.5,
+        "gain": 1.0
+      },
+      {
+        "id": "ev_p05",
+        "ev": 0.5,
+        "gain": 1.0
+      },
+      {
+        "id": "ev_p1",
+        "ev": 1.0,
+        "gain": 1.0
+      },
+      {
+        "id": "gain2",
+        "ev": 0.0,
+        "gain": 2.0
+      },
+      {
+        "id": "gain4",
+        "ev": 0.0,
+        "gain": 4.0
+      },
+      {
+        "id": "ev_m1_gain2",
+        "ev": -1.0,
+        "gain": 2.0
+      }
+    ],
+    "calibration_dev_pairs": 24,
+    "assignment_seeds": [
+      101,
+      202,
+      303,
+      404,
+      505
+    ],
+    "assignment": "balanced cyclic rotation after seeded pair and condition permutations; each pair sees five distinct conditions",
+    "random_selector_seed": 1907,
+    "signal_aggregation": "Signal-Global: mean across fixed-support pixels of within-pixel candidate ranks; lower risk ranks better; never mean raw risk",
+    "rank_selection": {
+      "risk_ties": "average",
+      "global_score_atol": 1e-12,
+      "global_score_rtol": 0.0,
+      "global_ties": "seeded uniform among tied candidate IDs",
+      "tie_seed": 7813,
+      "exclude_left_columns": 4,
+      "chunk_pixels": 65536,
+      "seed_key": "purpose/pair/incoming condition/model/primary signal; independent of assignment seed and loader order"
+    },
+    "methods": [
+      "Identity",
+      "Random",
+      "Fixed-best",
+      "Signal-Global",
+      "Global Oracle"
+    ],
+    "dev_diagnostics": {
+      "methods": [
+        "Signal-Pixel Fusion",
+        "Pixel Oracle"
+      ],
+      "scope": "dev only",
+      "signal_pixel_ties": "seeded uniform among exactly minimum-risk candidates",
+      "outside_signal_support": "Identity disparity",
+      "pixel_oracle_objective": "per-pixel minimum native absolute disparity error, not D1 argmin",
+      "pixel_oracle_ties": "candidate ID",
+      "report": [
+        "Identity vs Global Oracle vs Pixel Oracle",
+        "Signal-Global vs Signal-Pixel Fusion",
+        "full domain and shared signal support"
+      ],
+      "heldout_pixel_fusion_approved": false,
+      "inclusion_decision": "manual gate after dev diagnostics; no automatic protocol change"
+    },
+    "fixed_best_objective": "pooled dev D1, ties Abs then 1px then candidate ID",
+    "fixed_best_dev_pair_scope": "all dev pairs (328), after candidate-bank freeze; not just 24-pair bank sanity subset",
+    "fixed_best_incoming_protocol": "one condition per dev pair, balanced globally and within each sequence; separate fixed dev assignment",
+    "fixed_best_assignment_seed": 28411,
+    "fixed_best_assignment_manifest": "manifests/sensor_v4_fixed_best_dev_assignment.json",
+    "fixed_best_near_tie_policy": "report pooled D1 top-2 gap and condition-wise metrics; never auto-rerun seeds or change the winner",
+    "oracle_objective": "per-observation D1, ties Abs then 1px then candidate ID; diagnostic only",
+    "frozen_artifact": null,
+    "execution": "seed -> RAFT -> ACV -> publish seed report -> next seed; no automatic launch from Table 2"
+  },
+  "preflight": {
+    "pairs": 6,
+    "conditions": [
+      "clean",
+      "brightness",
+      "gaussian_noise"
+    ],
+    "variant_pairs": 2,
+    "variant_candidate_ids": [
+      "ev_m1",
+      "gain2",
+      "ev_m1_gain2"
+    ],
+    "diagnostic_signals": {
+      "raft": "late_std",
+      "acv": "negative_peak"
+    },
+    "diagnostic_signal_status": "plumbing fixtures only, not recommended/frozen primary signals",
+    "dev_only": true
+  },
+  "open_assumptions": [
+    "20k uniformly sampled pixels per pair for primary Table 2, adopted 50k saved pool; full pixels for Table 1; histogram CI approximation is explicitly checked",
+    "Signal selection support is input geometry x>=4, not GT validity; Signal-Pixel uses Identity outside it; Pixel Oracle evaluates all GT-valid pixels and additionally reports common support"
+  ]
+}

@@ -1,0 +1,3 @@
+scenario,assumed_clean_abs,assumed_delta_abs,calculated_RbS
+direct_school_pixel_oracle_delta_plug_in,0.474,1.4873541847350134,0.12175795538132178
+transfer_school_pixel_oracle_reduction_ratio_to_full1000_identity,0.474,1.4098791052377404,0.11965841662905835

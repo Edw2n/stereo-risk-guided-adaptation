@@ -1,0 +1,122 @@
+{
+  "scope": "Documentation-only update; numerical implementation and prior validated evidence unchanged.",
+  "changed_existing_files": [
+    "CITATION.cff",
+    "README.md",
+    "docs/CHALLENGE.md",
+    "references.bib"
+  ],
+  "added_documents": [
+    "docs/COMMANDS.md",
+    "docs/REFERENCES.md"
+  ],
+  "local_links": "PASS",
+  "private_path_and_site_wording_scan": "PASS",
+  "duplicate_BibTeX_keys": 0,
+  "inference": false,
+  "commit": false,
+  "push": false,
+  "final_editorial_pass": {
+    "changed_documents": [
+      "README.md",
+      "docs/CHALLENGE.md",
+      "docs/COMMANDS.md",
+      "docs/PAPER.md",
+      "docs/REFERENCES.md",
+      "docs/VALIDATION.md"
+    ],
+    "style": "Concise academic project README; setup and validation details in linked documentation.",
+    "numerical_code_changed": false,
+    "local_links": "PASS",
+    "private_wording_scan": "PASS"
+  },
+  "venue_restoration": {
+    "file": "README.md",
+    "venue": "NeurIPS 2026 Workshop — RoCo-Spring: The Robust Correspondence Challenge",
+    "track": "Exploration Track · Stereo Estimation",
+    "numerical_code_changed": false
+  },
+  "readme_reference_style": {
+    "reference": "https://github.com/Edw2n/ImageNet-ES",
+    "changes": [
+      "Venue and year in the paper-title heading",
+      "RoCo-Spring venue and track below the author",
+      "Research summary before setup and reproduction instructions",
+      "Separate environment and data preparation sections"
+    ],
+    "numerical_code_changed": false
+  },
+  "readme_results_update": {
+    "author_heading_removed": true,
+    "citation_author_retained": true,
+    "header_links_one_line": [
+      "paper",
+      "challenge",
+      "submission:M03"
+    ],
+    "tables_source": "provenance/readme_results.json",
+    "images_copied_byte_exact": 2,
+    "local_links": "PASS",
+    "numerical_code_changed": false,
+    "inference": false,
+    "commit": false,
+    "push": false
+  },
+  "funding_and_attribution": {
+    "external_models_and_packages": "References",
+    "funding": "Acknowledgments: user-provided NRF/MSIT and KHIS statements, consistent with manuscript",
+    "licenses_unchanged": true
+  },
+  "reference_format": {
+    "source_credit": "Linked upstream repositories above the bibliography",
+    "bibliography": "Visible BibTeX code block",
+    "keys": [
+      "lipson2021raft",
+      "xu2022attention",
+      "croco_v2",
+      "mehl2023spring",
+      "oei2026robustspring"
+    ],
+    "source": "references.bib",
+    "own_citation_and_funding_preserved": true
+  },
+  "table_and_link_layout": {
+    "paper_table": "Method rows; grouped RAFT-Stereo and ACVNet metric columns",
+    "challenge_table": "Grouped native and server metric columns",
+    "alignment": "Left-aligned labels, right-aligned numbers, centered model/evaluation groups",
+    "links": "paper · challenge · submission: M03; one line, no nested brackets",
+    "numeric_values_changed": false,
+    "render_preview": "Locally rendered with GitHub-like styling and visually checked"
+  },
+  "readme_intro_results": {
+    "sources": "provenance/readme_results.json",
+    "paper": {
+      "raft": {
+        "Identity_D1": 15.846597673063224,
+        "Signal_Global_D1": 12.894620104984327,
+        "relative_reduction_percent": 18.628462897728543
+      },
+      "acv": {
+        "Identity_D1": 30.115244789904036,
+        "Signal_Global_D1": 18.718623814742987,
+        "relative_reduction_percent": 37.84336157540284
+      }
+    },
+    "challenge_native_delta_abs": [
+      2.3506213353965024,
+      2.0388677222512315
+    ],
+    "challenge_RbS_from_reported_server_metrics": 0.13673440087778493,
+    "leaderboard_rank": 2,
+    "leaderboard_rank_as_of": "2026-10-15",
+    "numerical_code_changed": false,
+    "inference": false
+  },
+  "reproduction_workflows": {
+    "saved_results": "README: CPU aggregation from included task observations, proxy summaries, and archived challenge scores",
+    "fresh_inference": "docs/INFERENCE.md: setup, assets, paper inference, additional comparisons, and CroCo inference-to-package workflow",
+    "new_runs_require_explicit_input_paths": true,
+    "inference_executed": false,
+    "numerical_code_changed": false
+  }
+}

@@ -1,0 +1,349 @@
+{
+  "schema": "generic_joint_v1",
+  "status": "predetermined single draw; fixed before evaluation; implementation review pending",
+  "sampling": {
+    "method": "scipy.stats.qmc.LatinHypercube",
+    "dimensions": 5,
+    "n": 30,
+    "seed": 20260926,
+    "scramble": true,
+    "optimization": null,
+    "scipy_version": "1.15.3",
+    "parameter_order": [
+      "exposure",
+      "contrast",
+      "gamma",
+      "saturation",
+      "detail"
+    ],
+    "lower": [
+      -1,
+      -0.8,
+      -1,
+      -1,
+      -1
+    ],
+    "upper": [
+      1,
+      0.8,
+      1,
+      1,
+      1
+    ],
+    "selection_uses_GT_or_model_outputs": false
+  },
+  "candidates": [
+    {
+      "id": "identity",
+      "parameters": {
+        "exposure": 0.0,
+        "contrast": 0.0,
+        "gamma": 0.0,
+        "saturation": 0.0,
+        "detail": 0.0
+      }
+    },
+    {
+      "id": "joint_01",
+      "parameters": {
+        "exposure": 0.7441608855525557,
+        "contrast": -0.5240381696815601,
+        "gamma": 0.9593542779970778,
+        "saturation": 0.14717934926231035,
+        "detail": 0.0018925218143075462
+      }
+    },
+    {
+      "id": "joint_02",
+      "parameters": {
+        "exposure": -0.7529603291796767,
+        "contrast": 0.18808664152907573,
+        "gamma": -0.4756385321817802,
+        "saturation": -0.592331984927382,
+        "detail": -0.23822917306995361
+      }
+    },
+    {
+      "id": "joint_03",
+      "parameters": {
+        "exposure": -0.5671705922305976,
+        "contrast": -0.4226772693978842,
+        "gamma": -0.8585490409254314,
+        "saturation": -0.6744351126518475,
+        "detail": -0.5591358142314574
+      }
+    },
+    {
+      "id": "joint_04",
+      "parameters": {
+        "exposure": -0.28001224722717855,
+        "contrast": -0.4530565383626266,
+        "gamma": 0.40487607815542503,
+        "saturation": 0.7755372155641636,
+        "detail": -0.1735026733430075
+      }
+    },
+    {
+      "id": "joint_05",
+      "parameters": {
+        "exposure": -0.509833757648285,
+        "contrast": -0.7320653920454513,
+        "gamma": 0.1530513876142774,
+        "saturation": 0.07278199553779152,
+        "detail": 0.9990285509589734
+      }
+    },
+    {
+      "id": "joint_06",
+      "parameters": {
+        "exposure": -0.3751170961450939,
+        "contrast": 0.042166763084825476,
+        "gamma": 0.5198433390926847,
+        "saturation": 0.8985238058668767,
+        "detail": 0.7020175125113195
+      }
+    },
+    {
+      "id": "joint_07",
+      "parameters": {
+        "exposure": 0.03236011992919008,
+        "contrast": 0.2617001134577741,
+        "gamma": -0.87618269424898,
+        "saturation": 0.2610300612106071,
+        "detail": -0.06833497330994343
+      }
+    },
+    {
+      "id": "joint_08",
+      "parameters": {
+        "exposure": 0.22573843702149698,
+        "contrast": 0.702370231032877,
+        "gamma": -0.7143560128471576,
+        "saturation": -0.15078021667303665,
+        "detail": 0.42749721619096226
+      }
+    },
+    {
+      "id": "joint_09",
+      "parameters": {
+        "exposure": -0.9971356877940487,
+        "contrast": -0.31482941058898906,
+        "gamma": -0.7906722075252639,
+        "saturation": 0.6946672538119294,
+        "detail": -0.857932689854308
+      }
+    },
+    {
+      "id": "joint_10",
+      "parameters": {
+        "exposure": -0.6121599628422326,
+        "contrast": 0.583132179899948,
+        "gamma": 0.11178750099762258,
+        "saturation": -0.9593489192078926,
+        "detail": 0.8444416450011469
+      }
+    },
+    {
+      "id": "joint_11",
+      "parameters": {
+        "exposure": 0.18227497135139448,
+        "contrast": 0.28638620498362166,
+        "gamma": -0.4352856424651912,
+        "saturation": -0.38396863408546145,
+        "detail": -0.2774139066338638
+      }
+    },
+    {
+      "id": "joint_12",
+      "parameters": {
+        "exposure": 0.7029838801968544,
+        "contrast": 0.6261868768461134,
+        "gamma": -0.5819718364760397,
+        "saturation": -0.08968959282039324,
+        "detail": -0.7296857494214266
+      }
+    },
+    {
+      "id": "joint_13",
+      "parameters": {
+        "exposure": 0.5852583075116402,
+        "contrast": 0.0641509574044552,
+        "gamma": -0.6326161357363302,
+        "saturation": -0.90856703762853,
+        "detail": -0.642366747523466
+      }
+    },
+    {
+      "id": "joint_14",
+      "parameters": {
+        "exposure": 0.8122534738153797,
+        "contrast": -0.3473295858912539,
+        "gamma": -0.26313192473858293,
+        "saturation": 0.03854250230802503,
+        "detail": -0.8707380904254469
+      }
+    },
+    {
+      "id": "joint_15",
+      "parameters": {
+        "exposure": -0.8957701844793078,
+        "contrast": 0.411938962783549,
+        "gamma": -0.1327920214221041,
+        "saturation": -0.4214969361668953,
+        "detail": 0.3747094243755065
+      }
+    },
+    {
+      "id": "joint_16",
+      "parameters": {
+        "exposure": 0.6507816477600092,
+        "contrast": -0.13989345389525287,
+        "gamma": -0.2719131157179425,
+        "saturation": 0.5305286664137354,
+        "detail": -0.9368168245103939
+      }
+    },
+    {
+      "id": "joint_17",
+      "parameters": {
+        "exposure": 0.46793406776583635,
+        "contrast": -0.05542424770778498,
+        "gamma": 0.055315105392357955,
+        "saturation": 0.8470249588567509,
+        "detail": -0.5027306659732498
+      }
+    },
+    {
+      "id": "joint_18",
+      "parameters": {
+        "exposure": -0.4585944189643606,
+        "contrast": 0.6420296263532839,
+        "gamma": 0.6017135216246434,
+        "saturation": 0.3884557774133659,
+        "detail": 0.6224449571455242
+      }
+    },
+    {
+      "id": "joint_19",
+      "parameters": {
+        "exposure": 0.40493073343714703,
+        "contrast": -0.6155345263388927,
+        "gamma": 0.7205102763965014,
+        "saturation": 0.30823282532694374,
+        "detail": 0.77211813662897
+      }
+    },
+    {
+      "id": "joint_20",
+      "parameters": {
+        "exposure": -0.010574232018963792,
+        "contrast": 0.13269059557654583,
+        "gamma": 0.20159770557450085,
+        "saturation": 0.9514748588243822,
+        "detail": 0.21750760424389814
+      }
+    },
+    {
+      "id": "joint_21",
+      "parameters": {
+        "exposure": -0.14031669543221303,
+        "contrast": -0.16568004913559398,
+        "gamma": 0.8140236795178852,
+        "saturation": 0.5367938121006008,
+        "detail": -0.7507629656708761
+      }
+    },
+    {
+      "id": "joint_22",
+      "parameters": {
+        "exposure": 0.9893921670464931,
+        "contrast": 0.44547814672095365,
+        "gamma": 0.567237150154924,
+        "saturation": -0.4959834601939369,
+        "detail": 0.1964440330619257
+      }
+    },
+    {
+      "id": "joint_23",
+      "parameters": {
+        "exposure": -0.8236465293488942,
+        "contrast": 0.33905535574810797,
+        "gamma": -0.38272988927239615,
+        "saturation": -0.7815007113607533,
+        "detail": -0.4013958779053326
+      }
+    },
+    {
+      "id": "joint_24",
+      "parameters": {
+        "exposure": -0.1058402923806887,
+        "contrast": -0.5591562023977651,
+        "gamma": 0.31814854171181883,
+        "saturation": 0.6545416284099908,
+        "detail": 0.9324615117034434
+      }
+    },
+    {
+      "id": "joint_25",
+      "parameters": {
+        "exposure": -0.7130305945879073,
+        "contrast": -0.2552535849208194,
+        "gamma": -0.1861862572620715,
+        "saturation": -0.2887252259856249,
+        "detail": 0.0948320547196626
+      }
+    },
+    {
+      "id": "joint_26",
+      "parameters": {
+        "exposure": -0.21940660449846228,
+        "contrast": 0.5173877028833191,
+        "gamma": -0.9643056829334109,
+        "saturation": -0.03730552259412123,
+        "detail": -0.36744274331534565
+      }
+    },
+    {
+      "id": "joint_27",
+      "parameters": {
+        "exposure": 0.3382502298644505,
+        "contrast": -0.02590051981853414,
+        "gamma": -0.059120382162441976,
+        "saturation": 0.41389662586529874,
+        "detail": 0.30334083111447585
+      }
+    },
+    {
+      "id": "joint_28",
+      "parameters": {
+        "exposure": 0.10533893059588006,
+        "contrast": -0.6771225788838953,
+        "gamma": 0.7884371004001416,
+        "saturation": -0.6437136134903958,
+        "detail": -0.06522265803400962
+      }
+    },
+    {
+      "id": "joint_29",
+      "parameters": {
+        "exposure": 0.901594501040641,
+        "contrast": -0.7667662455829323,
+        "gamma": 0.34825072887995634,
+        "saturation": -0.8431185658978506,
+        "detail": 0.5227777677897294
+      }
+    },
+    {
+      "id": "joint_30",
+      "parameters": {
+        "exposure": 0.3110457199599306,
+        "contrast": 0.7909136731819295,
+        "gamma": 0.9255969851479848,
+        "saturation": -0.23786165600607767,
+        "detail": 0.570896317178679
+      }
+    }
+  ],
+  "resampling_allowed": false,
+  "range_changes_allowed": false
+}

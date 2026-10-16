@@ -1,0 +1,115 @@
+{
+  "model": {
+    "id": "foundation",
+    "name": "FoundationStereo",
+    "order": 2,
+    "variant": "official ViT-L 23-51-11",
+    "upstream": {
+      "name": "FoundationStereo",
+      "url": "https://github.com/NVlabs/FoundationStereo.git",
+      "commit": "6e8806816b533e4d13ddbb95ffa907b797060a62",
+      "path": "/storage1/USER/stereo-risk/upstream/foundation"
+    },
+    "checkpoint": {
+      "model": "foundation",
+      "name": "23-51-11/model_best_bp2.pth",
+      "url": "https://drive.google.com/uc?id=1Yh_2o9QCUrVqZrnAXZ7RUr0zTp3JrMKe",
+      "path": "/storage1/USER/stereo-risk/checkpoints/foundation/model_best_bp2.pth",
+      "sha256": "60e79bde9c6a00acea551625ff814fe06e5a6806e2c0c9829baee248de87c5f1",
+      "status": "DOWNLOADED",
+      "bytes": 3298527334,
+      "seconds": 558.9209819752723
+    },
+    "spring_training_overlap": "unknown",
+    "training_data": {
+      "stereo": [
+        "FSD",
+        "SceneFlow",
+        "Sintel",
+        "CREStereo",
+        "FallingThings",
+        "InStereo2K",
+        "Virtual KITTI 2"
+      ],
+      "priors": [
+        "Depth Anything V2",
+        "DINOv2"
+      ]
+    },
+    "overlap_evidence": {
+      "stereo_stage": "No Spring in paper Sec4.1 training list",
+      "full_lineage": "No complete auditable image inventory for internet-scale prior; unknown is not no",
+      "sources": [
+        "https://arxiv.org/html/2501.09898v2#S4.SS1",
+        "readme.md"
+      ]
+    },
+    "license": {
+      "code": "NVIDIA research-only noncommercial license",
+      "weights": "official research release; underlying DAv2-L noncommercial terms also recorded"
+    },
+    "inference": {
+      "batch_size": 1,
+      "input_shape": [
+        1080,
+        1920
+      ],
+      "reference_eye": "left",
+      "eval_mode": true,
+      "inference_seed": 0,
+      "clean_corrupt_settings_identical": true,
+      "GT_input": false,
+      "remove_maxdisp_pixels": false,
+      "invalid_prediction_policy": "BLOCKED; never silently exclude or fill",
+      "checkpoint_state_key": "model",
+      "vit_size": "vitl",
+      "normalization": "RGB /255, ImageNet mean/std inside model",
+      "precision": "official AMP FP16",
+      "valid_iters": 32,
+      "native_resize": false,
+      "hiera": 1,
+      "small_ratio": 0.5,
+      "padding_divisor": 32,
+      "force_square": false,
+      "max_disp": 416,
+      "low_memory": 0,
+      "remove_invisible": false,
+      "point_cloud_postprocessing": false,
+      "output": "raw native disparity before visualization/point-cloud masking",
+      "cfg_yaml": {
+        "model": "foundation",
+        "name": "23-51-11/cfg.yaml",
+        "url": "https://drive.google.com/uc?id=1tidGICH1_kTUUqi42aboKscuMY4IK_Xr",
+        "path": "/storage1/USER/stereo-risk/checkpoints/foundation/cfg.yaml",
+        "sha256": "a9d9dd2137c30edc2236194f62df14d222dad5fd3287a33c7540b543bb93853f",
+        "status": "DOWNLOADED",
+        "bytes": 499,
+        "seconds": 1.9737819507718086
+      }
+    },
+    "environment_plan": {
+      "upstream": "environment.yml",
+      "python": "3.11",
+      "torch": "2.4.1",
+      "torchvision": "0.19.1",
+      "xformers": "0.0.28.post1",
+      "extra": "flash-attn; separate environment, build CPU capped at 2; not installed into active env",
+      "isolation": "/storage1/USER/stereo-risk/envs/foundation"
+    },
+    "smoke_status": "NOT_RUN; waiting for GO CP0",
+    "GPU_time_seconds": 0,
+    "measured_peak_VRAM_GiB": null,
+    "measured_seconds_per_pair": null
+  },
+  "batch": 4,
+  "overlap": null,
+  "precision_protocol": null,
+  "native_shape": [
+    1080,
+    1920
+  ],
+  "eyes": [
+    "left",
+    "right"
+  ]
+}

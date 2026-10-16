@@ -1,0 +1,154 @@
+{
+  "status": "SERVER_EVALUATED",
+  "entry_id": 530,
+  "method": "RoCo-67-M02",
+  "source_url": "https://spring-benchmark.org/530/",
+  "private": true,
+  "fetched_utc": "2026-10-01T19:53:24.388106+00:00",
+  "page_sha256": "ae86ace809a13308954fd70255e64cd3fc284fc7106a72b38a1c2acb7f109016",
+  "upload_started_KST": "2026-10-02T02:43:16.694320+09:00",
+  "clean": {
+    "1px": 7.135,
+    "Abs": 0.471,
+    "D1": 2.705
+  },
+  "robust": {
+    "one_px": 22.979,
+    "delta_abs": 2.436,
+    "D1": 4.488
+  },
+  "E0_plus_delta": 2.907,
+  "RbS_calculated_from_displayed_server_metrics": 0.14695030252108177,
+  "RbS_is_calculated_not_a_server_displayed_rank": true,
+  "baseline_denominators": {
+    "clean": 3.4545,
+    "proxy": 18.4505
+  },
+  "corrupt_GT_Abs_available": false,
+  "local_native_delta": 2.4358914120341235,
+  "server_minus_local_delta": 0.00010858796587642772,
+  "mixed_precision": true,
+  "matched_setting_eligibility_claimed": false,
+  "conditions": [
+    {
+      "condition": "Brightness",
+      "robust_1px": 2.662,
+      "robust_delta_abs": 0.303,
+      "robust_D1": 0.467
+    },
+    {
+      "condition": "Contrast",
+      "robust_1px": 5.058,
+      "robust_delta_abs": 0.375,
+      "robust_D1": 0.562
+    },
+    {
+      "condition": "Defocus Blur",
+      "robust_1px": 3.008,
+      "robust_delta_abs": 0.34,
+      "robust_D1": 0.421
+    },
+    {
+      "condition": "Elastic Transform",
+      "robust_1px": 60.476,
+      "robust_delta_abs": 1.682,
+      "robust_D1": 0.52
+    },
+    {
+      "condition": "Fog",
+      "robust_1px": 5.982,
+      "robust_delta_abs": 0.555,
+      "robust_D1": 0.676
+    },
+    {
+      "condition": "Frost",
+      "robust_1px": 32.104,
+      "robust_delta_abs": 7.178,
+      "robust_D1": 16.047
+    },
+    {
+      "condition": "Gaussian Blur",
+      "robust_1px": 3.837,
+      "robust_delta_abs": 0.426,
+      "robust_D1": 0.551
+    },
+    {
+      "condition": "Gaussian Noise",
+      "robust_1px": 21.028,
+      "robust_delta_abs": 1.614,
+      "robust_D1": 2.934
+    },
+    {
+      "condition": "Glass Blur",
+      "robust_1px": 3.744,
+      "robust_delta_abs": 0.414,
+      "robust_D1": 0.46
+    },
+    {
+      "condition": "Impulse Noise",
+      "robust_1px": 27.623,
+      "robust_delta_abs": 2.515,
+      "robust_D1": 4.551
+    },
+    {
+      "condition": "JPEG Compression",
+      "robust_1px": 44.45,
+      "robust_delta_abs": 4.231,
+      "robust_D1": 5.773
+    },
+    {
+      "condition": "Motion Blur",
+      "robust_1px": 7.498,
+      "robust_delta_abs": 1.308,
+      "robust_D1": 1.866
+    },
+    {
+      "condition": "Pixelate",
+      "robust_1px": 29.42,
+      "robust_delta_abs": 1.394,
+      "robust_D1": 1.633
+    },
+    {
+      "condition": "Rain",
+      "robust_1px": 37.978,
+      "robust_delta_abs": 3.901,
+      "robust_D1": 9.076
+    },
+    {
+      "condition": "Saturate",
+      "robust_1px": 2.141,
+      "robust_delta_abs": 0.206,
+      "robust_D1": 0.27
+    },
+    {
+      "condition": "Shot Noise",
+      "robust_1px": 19.087,
+      "robust_delta_abs": 1.392,
+      "robust_D1": 2.408
+    },
+    {
+      "condition": "Snow",
+      "robust_1px": 36.421,
+      "robust_delta_abs": 4.886,
+      "robust_D1": 12.001
+    },
+    {
+      "condition": "Spatter",
+      "robust_1px": 34.001,
+      "robust_delta_abs": 7.566,
+      "robust_D1": 16.353
+    },
+    {
+      "condition": "Speckle Noise",
+      "robust_1px": 20.284,
+      "robust_delta_abs": 1.364,
+      "robust_D1": 2.12
+    },
+    {
+      "condition": "Zoom Blur",
+      "robust_1px": 62.785,
+      "robust_delta_abs": 7.072,
+      "robust_D1": 11.063
+    }
+  ]
+}

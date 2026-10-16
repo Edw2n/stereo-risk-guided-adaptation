@@ -1,0 +1,41 @@
+{
+  "raft": {
+    "repo": "https://github.com/princeton-vl/RAFT-Stereo.git",
+    "commit": "6e93ed2169bd858dbb43033988563f3b0bb49506",
+    "source_key": "paper_third_party",
+    "source_subdir": "RAFT-Stereo",
+    "checkpoint_key": "paper_checkpoints",
+    "checkpoint_subpath": "raftstereo-sceneflow.pth",
+    "url": "https://www.dropbox.com/scl/fi/5khx1bhz84dapi8vtwapg/models.zip?rlkey=ggddrn1du1iiq6mgc2dsdpmwi&dl=1",
+    "zip_member_suffix": "raftstereo-sceneflow.pth",
+    "sha256": "ba75bdcb379b4c3942d1e714565d0e66e6b2450a3da8129f54073302d67e0a6d"
+  },
+  "acv": {
+    "repo": "https://github.com/gangweiX/ACVNet.git",
+    "commit": "57b84e09493030ded3cf464c635e0203f014b606",
+    "source_key": "paper_third_party",
+    "source_subdir": "ACVNet",
+    "checkpoint_key": "paper_checkpoints",
+    "checkpoint_subpath": "acvnet/ACVNet/sceneflow.ckpt",
+    "url": "https://drive.google.com/uc?id=1C1NMGnZ7aOUNHG5CTNKGIgr99k_mDTfJ",
+    "gdrive_id": "1C1NMGnZ7aOUNHG5CTNKGIgr99k_mDTfJ",
+    "sha256": "a48e1f719dfaa07a6376ffd7b8ac6d560afc72c558793efe665c659924f904ac"
+  },
+  "croco": {
+    "repo": "https://github.com/naver/croco.git",
+    "commit": "5d4dbc920b4cc0dac66bef0ce6876b58f1c82deb",
+    "source_key": "croco_upstream",
+    "checkpoint_key": "croco_checkpoint",
+    "url": "https://download.europe.naverlabs.com/ComputerVision/CroCo/StereoFlow_models/crocostereo_finetune_spring.pth",
+    "sha256": "123273a722a58134c6816efe5122c427815c92f82896be4d484e6d21b52da575"
+  },
+  "foundation": {
+    "repo": "https://github.com/NVlabs/FoundationStereo.git",
+    "commit": "6e8806816b533e4d13ddbb95ffa907b797060a62",
+    "source_key": "foundation_upstream",
+    "checkpoint_key": "foundation_checkpoint",
+    "url": "https://drive.google.com/uc?id=1Yh_2o9QCUrVqZrnAXZ7RUr0zTp3JrMKe",
+    "sha256": "60e79bde9c6a00acea551625ff814fe06e5a6806e2c0c9829baee248de87c5f1",
+    "manual_download": true
+  }
+}

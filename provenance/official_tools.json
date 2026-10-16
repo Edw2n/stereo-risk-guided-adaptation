@@ -1,0 +1,17 @@
+{
+  "url": "https://cloud.visus.uni-stuttgart.de/index.php/s/RSgYPXdKTyAFfWy/download",
+  "archive_sha256": "bc764c673ff783fef7576851b7d0eb433f6331e4eb36b86eecd645f302fdf862",
+  "executables": [
+    {
+      "name": "disp1_robust_subsampling",
+      "sha256": "8a1da4efe0f3f871af1a223b219564e222022680139b376b414cefc3755d28be",
+      "bytes": 1134952
+    },
+    {
+      "name": "disp1_subsampling",
+      "sha256": "ca9dcf3f7730837afcde193c09176ae8d4c8bc6c2a5dd91c98304255fa154e95",
+      "bytes": 6851752
+    }
+  ],
+  "TLS": "System trusted root + cryptographically verified HARICA-GEANT-TLS-R1 intermediate; no certificate verification bypass"
+}

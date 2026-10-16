@@ -1,0 +1,18 @@
+{
+  "storage_root": "/storage1/USER/stereo-risk/outputs",
+  "storage_guard_root": "/storage1/USER/stereo-risk",
+  "paper_python": "/storage1/USER/stereo-risk/envs/paper/bin/python",
+  "challenge_python": "/storage1/USER/stereo-risk/envs/croco/bin/python",
+  "foundation_python": "/storage1/USER/stereo-risk/envs/foundation/bin/python",
+  "paper_data": "/storage1/USER/stereo-risk/data",
+  "paper_checkpoints": "/storage1/USER/stereo-risk/checkpoints",
+  "paper_third_party": "/storage1/USER/stereo-risk/upstream",
+  "croco_upstream": "/storage1/USER/stereo-risk/upstream/croco",
+  "croco_checkpoint": "/storage1/USER/stereo-risk/checkpoints/crocostereo_finetune_spring.pth",
+  "foundation_upstream": "/storage1/USER/stereo-risk/upstream/foundation",
+  "foundation_checkpoint": "/storage1/USER/stereo-risk/checkpoints/foundation/model_best_bp2.pth",
+  "foundation_cfg": "/storage1/USER/stereo-risk/checkpoints/foundation/cfg.yaml",
+  "official_tool_library_paths": [
+    "/storage1/USER/stereo-risk/tools/lib"
+  ]
+}

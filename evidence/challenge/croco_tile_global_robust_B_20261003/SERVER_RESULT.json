@@ -1,0 +1,157 @@
+{
+  "status": "SERVER_EVALUATED",
+  "entry_id": 531,
+  "method": "RoCo-67-M03",
+  "source_url": "https://spring-benchmark.org/531/",
+  "private": false,
+  "visibility": "PUBL",
+  "fetched_utc": "2026-10-03T10:04:20.965427+00:00",
+  "page_sha256": "14d00c909c2c846d9a91e31146d0f2831b5b141d477d7ca001131ab6a485fe88",
+  "upload_started_KST": "2026-10-03T18:38:20.623022+09:00",
+  "clean": {
+    "1px": 7.283,
+    "Abs": 0.474,
+    "D1": 2.725
+  },
+  "robust": {
+    "one_px": 21.162,
+    "delta_abs": 2.04,
+    "D1": 3.903
+  },
+  "E0_plus_delta": 2.5140000000000002,
+  "RbS_calculated_from_displayed_server_metrics": 0.13673440087778493,
+  "RbS_is_calculated_not_a_server_displayed_rank": true,
+  "baseline_denominators": {
+    "clean": 3.4545,
+    "proxy": 18.4505
+  },
+  "score_definition_url": "https://roco-spring.github.io/evaluation.html",
+  "corrupt_GT_Abs_available": false,
+  "local_native_delta": 2.0388677222512315,
+  "server_minus_local_delta": 0.001132277748768562,
+  "AMP_scope_difference_disclosed": true,
+  "disclosure": "Fixed 8-candidate Tile Global selection, overlap 0.7, FP16. Clean: forward-only AMP; corruptions: whole-call AMP on different GPUs. This numerical-scope difference is retained; exact matched-setting eligibility is not claimed.",
+  "matched_setting_eligibility_claimed": false,
+  "conditions": [
+    {
+      "condition": "Brightness",
+      "robust_1px": 2.164,
+      "robust_delta_abs": 0.193,
+      "robust_D1": 0.267
+    },
+    {
+      "condition": "Contrast",
+      "robust_1px": 5.608,
+      "robust_delta_abs": 0.39,
+      "robust_D1": 0.582
+    },
+    {
+      "condition": "Defocus Blur",
+      "robust_1px": 3.15,
+      "robust_delta_abs": 0.324,
+      "robust_D1": 0.386
+    },
+    {
+      "condition": "Elastic Transform",
+      "robust_1px": 56.878,
+      "robust_delta_abs": 1.586,
+      "robust_D1": 0.528
+    },
+    {
+      "condition": "Fog",
+      "robust_1px": 6.437,
+      "robust_delta_abs": 0.565,
+      "robust_D1": 0.649
+    },
+    {
+      "condition": "Frost",
+      "robust_1px": 32.256,
+      "robust_delta_abs": 6.555,
+      "robust_D1": 15.589
+    },
+    {
+      "condition": "Gaussian Blur",
+      "robust_1px": 3.965,
+      "robust_delta_abs": 0.394,
+      "robust_D1": 0.49
+    },
+    {
+      "condition": "Gaussian Noise",
+      "robust_1px": 20.082,
+      "robust_delta_abs": 1.31,
+      "robust_D1": 2.063
+    },
+    {
+      "condition": "Glass Blur",
+      "robust_1px": 3.67,
+      "robust_delta_abs": 0.39,
+      "robust_D1": 0.412
+    },
+    {
+      "condition": "Impulse Noise",
+      "robust_1px": 23.888,
+      "robust_delta_abs": 1.76,
+      "robust_D1": 2.772
+    },
+    {
+      "condition": "JPEG Compression",
+      "robust_1px": 39.967,
+      "robust_delta_abs": 3.066,
+      "robust_D1": 4.26
+    },
+    {
+      "condition": "Motion Blur",
+      "robust_1px": 7.63,
+      "robust_delta_abs": 1.065,
+      "robust_D1": 1.708
+    },
+    {
+      "condition": "Pixelate",
+      "robust_1px": 11.331,
+      "robust_delta_abs": 0.723,
+      "robust_D1": 0.507
+    },
+    {
+      "condition": "Rain",
+      "robust_1px": 35.004,
+      "robust_delta_abs": 3.403,
+      "robust_D1": 7.645
+    },
+    {
+      "condition": "Saturate",
+      "robust_1px": 2.265,
+      "robust_delta_abs": 0.199,
+      "robust_D1": 0.296
+    },
+    {
+      "condition": "Shot Noise",
+      "robust_1px": 18.213,
+      "robust_delta_abs": 1.141,
+      "robust_D1": 1.698
+    },
+    {
+      "condition": "Snow",
+      "robust_1px": 34.587,
+      "robust_delta_abs": 4.348,
+      "robust_D1": 11.253
+    },
+    {
+      "condition": "Spatter",
+      "robust_1px": 33.856,
+      "robust_delta_abs": 5.837,
+      "robust_D1": 15.151
+    },
+    {
+      "condition": "Speckle Noise",
+      "robust_1px": 19.113,
+      "robust_delta_abs": 1.181,
+      "robust_D1": 1.636
+    },
+    {
+      "condition": "Zoom Blur",
+      "robust_1px": 63.183,
+      "robust_delta_abs": 6.375,
+      "robust_D1": 10.167
+    }
+  ]
+}
